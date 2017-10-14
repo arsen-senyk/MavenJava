@@ -15,7 +15,7 @@ public class inbox_page_social {
 
             WebDriver driver = new ChromeDriver();
             login_page getObjLogin = new login_page(driver);
-            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
             getObjLogin.Login_to_Gmail();
             inbox_page objinbox = new inbox_page(driver);
             objinbox.social_mails_click();

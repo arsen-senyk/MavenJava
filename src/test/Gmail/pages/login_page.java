@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class login_page {
     WebDriver driver;
-    String url_gmail = "https://mail.google.com/mail/u/0/#inbox_page";
+
     By login_field = By.xpath("//input[@type='email'][@id='identifierId']");
     By next_button = By.xpath("//span[@class='RveJvd snByac']");
     By password_field = By.xpath("//div[@id='password']//input[@name='password']");
@@ -19,11 +19,11 @@ public class login_page {
 }
     public void Login_to_Gmail(){
 
-        driver.get(url_gmail);
+        driver.get(data.url_gmail);
         driver.findElement(login_field).sendKeys(data.login);
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(driver.findElement(next_button)));
         driver.findElement(next_button).click();
-        new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(password_field));
+        new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(password_field));
         driver.findElement(password_field).sendKeys(data.password + Keys.ENTER);
 
     }
