@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b726cb99-d297-4e3a-ad48-afc8ceec776a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/circle.yml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.circleci/config.yml" afterPath="$PROJECT_DIR$/.circleci/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumTestNGMaven.iml" afterPath="$PROJECT_DIR$/SeleniumTestNGMaven.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,20 +23,58 @@
       <file leaf-file-name="DemoDragDrop.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/DemoDragDrop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="100">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
+            <state relative-caret-position="239">
               <caret line="43" column="91" lean-forward="false" selection-start-line="43" selection-start-column="91" selection-end-line="43" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inbox_page_social.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/Gmail/tests/inbox_page_social.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="17" column="56" lean-forward="false" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SeleniumTestNGMaven.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SeleniumTestNGMaven.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-235">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewTest1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/NewTest1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,7 +106,6 @@
         <option value="$PROJECT_DIR$/src/main/Guru99/pages/Homepage.java" />
         <option value="$PROJECT_DIR$/src/main/Guru99/test/TestLogin.java" />
         <option value="$PROJECT_DIR$/src/main/Guru99/pages/TestLogin.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/Guru99/test/TestLogin.java" />
         <option value="$PROJECT_DIR$/src/test/Guru99/pages/Homepage.java" />
         <option value="$PROJECT_DIR$/src/test/Guru99/pages/Loginpage.java" />
@@ -93,14 +130,21 @@
         <option value="$PROJECT_DIR$/src/test/java/DemoDragDrop.java" />
         <option value="$PROJECT_DIR$/circle.yml" />
         <option value="$PROJECT_DIR$/.circleci/config.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="7" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -120,9 +164,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,19 +213,29 @@
             <path>
               <item name="MavenJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="MavenJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MavenJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenJava" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.git/info" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/Selenium" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/Guru99/test" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -214,7 +265,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/admin/eclipse-workspace/SeleniumTestNGMaven/src/test/Gmail/tests/testng.xml">
+  <component name="RunManager" selected="TestNG.NewTest2">
     <configuration name="C:/Users/admin/eclipse-workspace/SeleniumTestNGMaven/MavenJava/src/test/java/testng.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestNGMaven" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -267,13 +318,65 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="DemoDragDrop" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DemoDragDrop.Demo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumTestNGMaven" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DemoDragDrop" />
+      <option name="METHOD_NAME" value="Demo" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="NewTest1" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestNGMaven" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NewTest1" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="NewTest2" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumTestNGMaven" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NewTest2" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -371,72 +474,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="inbox_page_social.social_mail_check" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestNGMaven" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.inbox_page_social" />
-      <option name="METHOD_NAME" value="social_mail_check" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="login_test.Login_success" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumTestNGMaven" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.login_test" />
-      <option name="METHOD_NAME" value="Login_success" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="TestNG.C:/Users/admin/eclipse-workspace/SeleniumTestNGMaven/src/test/Gmail/tests/testng.xml" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.login_test.Login_success" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.inbox_page_social.social_mail_check" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.DemoDragDrop" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/Users/admin/eclipse-workspace/SeleniumTestNGMaven/MavenJava/src/test/java/testng.xml" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.C:/Users/admin/eclipse-workspace/SeleniumTestNGMaven/MavenJava/src/test/java/testng.xml" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.NewTest1" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.DemoDragDrop.Demo" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.NewTest2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/Users/admin/eclipse-workspace/SeleniumTestNGMaven/src/test/Gmail/tests/testng.xml" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/Users/admin/eclipse-workspace/SeleniumTestNGMaven/MavenJava/src/test/java/testng.xml" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.DemoDragDrop" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.inbox_page_social.social_mail_check" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.login_test.Login_success" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.NewTest2" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/Users/admin/eclipse-workspace/SeleniumTestNGMaven/src/test/Gmail/tests/testng.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.NewTest1" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.DemoDragDrop.Demo" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.C:/Users/admin/eclipse-workspace/SeleniumTestNGMaven/MavenJava/src/test/java/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -500,30 +551,19 @@
       <option name="project" value="LOCAL" />
       <updated>1508276618316</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="new files">
+      <created>1508277134024</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1508277134024</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_admin_eclipse-workspace_SeleniumTestNGMaven_MavenJava_src_test_java_testng_xml - 2017.10.17 at 22h 21m 33s.xml">
-      <configuration name="C:/Users/admin/eclipse-workspace/SeleniumTestNGMaven/MavenJava/src/test/java/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_admin_eclipse-workspace_SeleniumTestNGMaven_src_test_Gmail_tests_testng_xml - 2017.10.17 at 22h 22m 59s.xml">
+    <history-entry file="C__Users_admin_eclipse-workspace_SeleniumTestNGMaven_src_test_Gmail_tests_testng_xml - 2017.10.18 at 19h 50m 37s.xml">
       <configuration name="C:/Users/admin/eclipse-workspace/SeleniumTestNGMaven/src/test/Gmail/tests/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DemoDragDrop - 2017.10.14 at 09h 25m 04s.xml">
-      <configuration name="DemoDragDrop" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DemoDragDrop - 2017.10.14 at 09h 27m 47s.xml">
-      <configuration name="DemoDragDrop" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DemoDragDrop - 2017.10.14 at 09h 32m 41s.xml">
-      <configuration name="DemoDragDrop" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DemoDragDrop - 2017.10.14 at 09h 33m 35s.xml">
-      <configuration name="DemoDragDrop" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="DemoDragDrop - 2017.10.14 at 09h 34m 58s.xml">
-      <configuration name="DemoDragDrop" configurationId="TestNG" />
     </history-entry>
     <history-entry file="DemoDragDrop - 2017.10.14 at 09h 36m 17s.xml">
       <configuration name="DemoDragDrop" configurationId="TestNG" />
@@ -534,10 +574,27 @@
     <history-entry file="DemoDragDrop - 2017.10.14 at 09h 40m 51s.xml">
       <configuration name="DemoDragDrop" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="DemoDragDrop_Demo - 2017.10.18 at 19h 37m 48s.xml">
+      <configuration name="DemoDragDrop.Demo" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="NewTest1 - 2017.10.18 at 19h 26m 40s.xml">
+      <configuration name="NewTest1" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="NewTest1 - 2017.10.18 at 19h 39m 08s.xml">
+      <configuration name="NewTest1" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="NewTest2 - 2017.10.18 at 19h 53m 37s.xml">
+      <configuration name="NewTest2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="NewTest2 - 2017.10.18 at 19h 55m 46s.xml">
+      <configuration name="NewTest2" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="NewTest2 - 2017.10.18 at 19h 57m 19s.xml">
+      <configuration name="NewTest2" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -545,11 +602,11 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39443535" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39443535" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18835099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29500756" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -626,13 +683,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/NewTest1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -770,13 +820,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/Example/pages/Loginpage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/Example/test/TestLogin.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/aaa.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Example/test/TestLogin.java" />
     <entry file="file://$PROJECT_DIR$/src/test/Example/pages/Homepage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/Example/pages/Loginpage.java" />
@@ -788,13 +831,6 @@
         <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/NewTest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -834,13 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Gmail/tests/inbox_page_social.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="17" column="56" lean-forward="false" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Gmail/pages/inbox_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -848,28 +877,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DemoDragDrop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circle.yml">
+    <entry file="file://$PROJECT_DIR$/circle.yml" />
+    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
-          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="16" selection-end-column="85" />
+          <caret line="43" column="91" lean-forward="false" selection-start-line="43" selection-start-column="91" selection-end-line="43" selection-end-column="91" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/test/Gmail/tests/inbox_page_social.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="43" column="91" lean-forward="false" selection-start-line="43" selection-start-column="91" selection-end-line="43" selection-end-column="91" />
+        <state relative-caret-position="160">
+          <caret line="17" column="56" lean-forward="false" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SeleniumTestNGMaven.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DemoDragDrop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/NewTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-235">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
