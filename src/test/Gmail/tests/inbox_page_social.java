@@ -1,5 +1,6 @@
 package tests;
 
+import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -13,6 +14,7 @@ public class inbox_page_social {
         @Test
         public void social_mail_check() throws InterruptedException {
 
+            ChromeDriverManager.getInstance().setup();
             WebDriver driver = new ChromeDriver();
             login_page getObjLogin = new login_page(driver);
             driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
