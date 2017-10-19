@@ -1,3 +1,4 @@
+import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import java.util.List;
@@ -18,6 +19,7 @@ public class NewTest2 {
     @Test
     public void test1() throws Throwable {
 
+        ChromeDriverManager.getInstance().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         driver.get("https://rozetka.com.ua/");
@@ -43,6 +45,8 @@ public class NewTest2 {
 
     @Test
     public void test2() throws InterruptedException {
+
+        ChromeDriverManager.getInstance().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         driver.get("https://rozetka.com.ua/ua/computers-notebooks/c80253/");
@@ -84,6 +88,8 @@ public class NewTest2 {
     }
     @Test
     public void test3() {
+
+        ChromeDriverManager.getInstance().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         driver.get("https://rozetka.com.ua/ua/");

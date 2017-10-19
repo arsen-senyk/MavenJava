@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e755a6b8-27d9-49e0-8a75-79765709ea7c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/tests/inbox_page_social.class" afterPath="$PROJECT_DIR$/target/test-classes/tests/inbox_page_social.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/tests/login_test.class" afterPath="$PROJECT_DIR$/target/test-classes/tests/login_test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumTestNGMaven.iml" afterPath="$PROJECT_DIR$/SeleniumTestNGMaven.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Gmail/tests/inbox_page_social.java" afterPath="$PROJECT_DIR$/src/test/Gmail/tests/inbox_page_social.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Gmail/tests/login_test.java" afterPath="$PROJECT_DIR$/src/test/Gmail/tests/login_test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/NewTest2.java" afterPath="$PROJECT_DIR$/src/test/java/NewTest2.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,6 +14,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="NewTest1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/NewTest1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SeleniumTestNGMaven.iml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SeleniumTestNGMaven.iml">
           <provider selected="true" editor-type-id="text-editor">
@@ -32,11 +34,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="NewTest2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/NewTest2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="login_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/Gmail/tests/login_test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="50" />
+              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -52,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inbox_page_social.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inbox_page_social.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/Gmail/tests/inbox_page_social.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
@@ -78,6 +90,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/Gmail/tests/login_test.java" />
         <option value="$PROJECT_DIR$/src/test/Gmail/tests/inbox_page_social.java" />
+        <option value="$PROJECT_DIR$/src/test/java/NewTest2.java" />
       </list>
     </option>
   </component>
@@ -149,6 +162,13 @@
               <item name="Gmail" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MavenJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -171,13 +191,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./home/arsen/IdeaProjects/MavenJava/src/test/Gmail/tests/testng.xml">
+  <component name="RunManager" selected="TestNG./home/arsen/IdeaProjects/MavenJava/src/test/java/testng.xml">
     <configuration name="/home/arsen/IdeaProjects/MavenJava/src/test/Gmail/tests/testng.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Selenium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/Gmail/tests/testng.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="/home/arsen/IdeaProjects/MavenJava/src/test/java/testng.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="SeleniumTestNGMaven" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/testng.xml" />
       <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
@@ -312,14 +359,16 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="TestNG./home/arsen/IdeaProjects/MavenJava/src/test/Gmail/tests/testng.xml" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.login_test" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG./home/arsen/IdeaProjects/MavenJava/src/test/java/testng.xml" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="TestNG./home/arsen/IdeaProjects/MavenJava/src/test/Gmail/tests/testng.xml" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.login_test" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="TestNG./home/arsen/IdeaProjects/MavenJava/src/test/java/testng.xml" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG./home/arsen/IdeaProjects/MavenJava/src/test/Gmail/tests/testng.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.login_test" />
       </list>
     </recent_temporary>
   </component>
@@ -345,6 +394,15 @@
     </history-entry>
     <history-entry file="_home_arsen_IdeaProjects_MavenJava_src_test_Gmail_tests_testng_xml - 2017.10.19 at 18h 15m 19s.xml">
       <configuration name="/home/arsen/IdeaProjects/MavenJava/src/test/Gmail/tests/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_arsen_IdeaProjects_MavenJava_src_test_java_testng_xml - 2017.10.19 at 18h 29m 07s.xml">
+      <configuration name="/home/arsen/IdeaProjects/MavenJava/src/test/java/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_arsen_IdeaProjects_MavenJava_src_test_java_testng_xml - 2017.10.19 at 18h 29m 29s.xml">
+      <configuration name="/home/arsen/IdeaProjects/MavenJava/src/test/java/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_arsen_IdeaProjects_MavenJava_src_test_java_testng_xml - 2017.10.19 at 18h 29m 36s.xml">
+      <configuration name="/home/arsen/IdeaProjects/MavenJava/src/test/java/testng.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="login_test - 2017.10.19 at 18h 07m 57s.xml">
       <configuration name="login_test" configurationId="TestNG" />
@@ -419,18 +477,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Gmail/tests/login_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Gmail/tests/inbox_page_social.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Gmail/tests/login_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/NewTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/NewTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
