@@ -1,4 +1,5 @@
 import io.github.bonigarcia.wdm.ChromeDriverManager;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import java.util.List;
@@ -19,8 +20,12 @@ public class NewTest2 {
     @Test
     public void test1() throws Throwable {
 
+        ChromeOptions chromeOptions = new ChromeOptions();
+        //chromeOptions.setBinary("/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary");
+        chromeOptions.addArguments("--headless");
         ChromeDriverManager.getInstance().setup();
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(chromeOptions);
+        //WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         driver.get("https://rozetka.com.ua/");
         WebElement el1 = driver.findElement(By.xpath("//a[@href='https://rozetka.com.ua/computers-notebooks/c80253/'][@class='f-menu-l-i-link f-menu-l-i-link-arrow sprite-side novisited']"));

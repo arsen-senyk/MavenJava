@@ -15,8 +15,8 @@ public class login_page {
     data_base data = new data_base();
 
     public login_page(WebDriver driver){
-    this.driver = driver;
-}
+        this.driver = driver;
+    }
     public void Login_to_Gmail(){
 
         driver.get(data.url_gmail);
