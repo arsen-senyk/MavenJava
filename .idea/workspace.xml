@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e755a6b8-27d9-49e0-8a75-79765709ea7c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/NewTest2.class" afterPath="$PROJECT_DIR$/target/test-classes/NewTest2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/tests/inbox_page_social.class" afterPath="$PROJECT_DIR$/target/test-classes/tests/inbox_page_social.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/pages/Data.class" afterPath="$PROJECT_DIR$/target/test-classes/pages/Data.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/pages/Login_page.class" afterPath="$PROJECT_DIR$/target/test-classes/pages/Login_page.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/tests/Actions.class" afterPath="$PROJECT_DIR$/target/test-classes/tests/Actions.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumTestNGMaven.iml" afterPath="$PROJECT_DIR$/SeleniumTestNGMaven.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Gmail/pages/login_page.java" afterPath="$PROJECT_DIR$/src/test/Gmail/pages/login_page.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Gmail/tests/inbox_page_social.java" afterPath="$PROJECT_DIR$/src/test/Gmail/tests/inbox_page_social.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/NewTest2.java" afterPath="$PROJECT_DIR$/src/test/java/NewTest2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Hivetests/pages/Data.java" afterPath="$PROJECT_DIR$/src/test/Hivetests/pages/Data.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java" afterPath="$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java" afterPath="$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +23,8 @@
       <file leaf-file-name="Data.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            <state relative-caret-position="144">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -33,8 +33,20 @@
       <file leaf-file-name="Actions.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+            <state relative-caret-position="948">
+              <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main_page.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="426">
+              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,13 +57,23 @@
       <file leaf-file-name="Login_page.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="51" column="9" lean-forward="false" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+            <state relative-caret-position="1152">
+              <caret line="64" column="8" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="117" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1379#1380#0" expanded="true" />
-                <element signature="e#1415#1416#0" expanded="true" />
+                <element signature="e#1577#1578#0" expanded="true" />
+                <element signature="e#1613#1614#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/Gmail/tests/login_test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="71" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,10 +104,16 @@
         <option value="$PROJECT_DIR$/src/test/Gmail/tests/inbox_page_social.java" />
         <option value="$PROJECT_DIR$/src/test/Gmail/pages/login_page.java" />
         <option value="$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java" />
+        <option value="$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java" />
         <option value="$PROJECT_DIR$/src/test/Hivetests/pages/Data.java" />
         <option value="$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java" />
       </list>
     </option>
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="TestNG" name="Actions.make_action_urgent" />
+    </enabled-run-configurations>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -118,9 +146,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -145,29 +173,6 @@
               <item name="MavenJava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="Gmail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MavenJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="Gmail" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MavenJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="Gmail" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MavenJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="Hivetests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -185,13 +190,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="Hivetests" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MavenJava" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,7 +246,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Actions.sign_up_test" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Actions.change_private_status" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -261,7 +259,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.Actions" />
-      <option name="METHOD_NAME" value="sign_up_test" />
+      <option name="METHOD_NAME" value="change_private_status" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -280,15 +278,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="NewTest2.test1" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration name="Actions.create_new_action_from_my_Actions" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <module name="SeleniumTestNGMaven" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="NewTest2" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Actions" />
+      <option name="METHOD_NAME" value="create_new_action_from_my_Actions" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -307,17 +310,54 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="/home/arsen/IdeaProjects/MavenJava/src/test/Gmail/tests/testng.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Selenium" />
+    <configuration name="Actions.make_action_urgent" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SeleniumTestNGMaven" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/Gmail/tests/testng.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Actions" />
+      <option name="METHOD_NAME" value="make_action_urgent" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="Actions.private_action" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SeleniumTestNGMaven" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.Actions" />
+      <option name="METHOD_NAME" value="private_action" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -415,52 +455,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="inbox_page_social" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SeleniumTestNGMaven" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.inbox_page_social" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG./home/arsen/IdeaProjects/MavenJava/src/test/Gmail/tests/testng.xml" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.NewTest2.test1" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.inbox_page_social" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.Actions.sign_up_test" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.Actions" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.Actions" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.Actions.create_new_action_from_my_Actions" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.Actions.make_action_urgent" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.Actions.private_action" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.Actions.change_private_status" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="TestNG.Actions" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.Actions.sign_up_test" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG./home/arsen/IdeaProjects/MavenJava/src/test/Gmail/tests/testng.xml" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.inbox_page_social" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.NewTest2.test1" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.Actions.change_private_status" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.Actions.private_action" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.Actions.create_new_action_from_my_Actions" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.Actions.make_action_urgent" />
       </list>
     </recent_temporary>
   </component>
@@ -478,35 +486,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Actions - 2017.10.20 at 17h 54m 58s.xml">
+    <history-entry file="Actions - 2017.10.23 at 15h 21m 56s.xml">
       <configuration name="Actions" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions - 2017.10.20 at 17h 58m 21s.xml">
+    <history-entry file="Actions - 2017.10.23 at 15h 41m 32s.xml">
       <configuration name="Actions" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions - 2017.10.20 at 17h 59m 00s.xml">
-      <configuration name="Actions" configurationId="TestNG" />
+    <history-entry file="Actions_change_private_status - 2017.10.23 at 15h 29m 22s.xml">
+      <configuration name="Actions.change_private_status" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions_sign_up_test - 2017.10.20 at 17h 23m 47s.xml">
-      <configuration name="Actions.sign_up_test" configurationId="TestNG" />
+    <history-entry file="Actions_change_private_status - 2017.10.23 at 15h 30m 33s.xml">
+      <configuration name="Actions.change_private_status" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions_sign_up_test - 2017.10.20 at 17h 25m 01s.xml">
-      <configuration name="Actions.sign_up_test" configurationId="TestNG" />
+    <history-entry file="Actions_change_private_status - 2017.10.23 at 15h 31m 28s.xml">
+      <configuration name="Actions.change_private_status" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions_sign_up_test - 2017.10.20 at 17h 27m 04s.xml">
-      <configuration name="Actions.sign_up_test" configurationId="TestNG" />
+    <history-entry file="Actions_change_private_status - 2017.10.23 at 15h 35m 55s.xml">
+      <configuration name="Actions.change_private_status" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions_sign_up_test - 2017.10.20 at 17h 27m 35s.xml">
-      <configuration name="Actions.sign_up_test" configurationId="TestNG" />
+    <history-entry file="Actions_change_private_status - 2017.10.23 at 15h 39m 14s.xml">
+      <configuration name="Actions.change_private_status" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions_sign_up_test - 2017.10.20 at 17h 30m 44s.xml">
-      <configuration name="Actions.sign_up_test" configurationId="TestNG" />
+    <history-entry file="Actions_private_action - 2017.10.23 at 15h 18m 54s.xml">
+      <configuration name="Actions.private_action" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions_sign_up_test - 2017.10.20 at 17h 31m 56s.xml">
-      <configuration name="Actions.sign_up_test" configurationId="TestNG" />
+    <history-entry file="Actions_private_action - 2017.10.23 at 15h 22m 34s.xml">
+      <configuration name="Actions.private_action" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions_sign_up_test - 2017.10.20 at 17h 33m 04s.xml">
-      <configuration name="Actions.sign_up_test" configurationId="TestNG" />
+    <history-entry file="Actions_private_action - 2017.10.23 at 15h 23m 52s.xml">
+      <configuration name="Actions.private_action" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -521,8 +529,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -531,8 +539,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -560,8 +568,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -582,11 +590,58 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SeleniumTestNGMaven.iml">
+    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="64" column="8" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="117" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1577#1578#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Gmail/tests/login_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SeleniumTestNGMaven.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -595,7 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,7 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -620,7 +673,7 @@
         <state relative-caret-position="126">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -630,17 +683,9 @@
         <state relative-caret-position="180">
           <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="37" />
           <folding>
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="false" />
+            <element signature="e#619#620#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Gmail/tests/login_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -648,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-72">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -656,7 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="31" column="90" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="90" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -664,9 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,30 +718,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Gmail/tests/login_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="51" column="9" lean-forward="false" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+        <state relative-caret-position="1152">
+          <caret line="64" column="8" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="117" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
+            <element signature="e#1577#1578#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Data.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        <state relative-caret-position="948">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

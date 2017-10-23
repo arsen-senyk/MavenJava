@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -30,6 +31,10 @@ public class Login_page {
     By lets_go = By.xpath("//div[@class='js-next-step next-step']");
     By cross = By.xpath("//span[@class='fa fa-times']");
 
+    By login_field = By.id("email-input");
+    By password_field = By.id("password-input");
+    By signin = By.xpath("//button[@class='btn-primary inactive']");
+
 
     public Login_page(WebDriver driver){
         this.driver = driver;
@@ -47,7 +52,7 @@ public class Login_page {
         driver.findElement(phone).sendKeys("0981234567");
         driver.findElement(email).click();
         String[] A = data.email.split("");
-        for(int i = 0; i < A.length - 1; i++){
+        for (int i = 0; i < A.length; i++) {
             driver.findElement(email).sendKeys(A[i]);
         }
         driver.findElement(password).click();
@@ -63,7 +68,19 @@ public class Login_page {
         driver.findElement(lets_go).click();
         driver.findElement(cross).click();
 
+    }
+
+    public void login_to_Hive() {
+
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get(data.url);
+        driver.manage().window().maximize();
+        driver.findElement(login_field).sendKeys(data.email);
+        driver.findElement(password_field).sendKeys(data.password + Keys.ENTER);
+        //driver.findElement(signin).click();
 
     }
+
+
 
 }
