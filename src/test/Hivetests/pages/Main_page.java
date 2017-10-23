@@ -57,6 +57,7 @@ public class Main_page {
         driver.findElement(test_action).click();
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(private_icon)));
         driver.findElement(private_icon).click();
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(ok)));
         driver.findElement(ok).click();
         driver.findElement(private_icon_unchecked).isDisplayed();
 
