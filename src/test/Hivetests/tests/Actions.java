@@ -5,6 +5,7 @@ import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -39,7 +40,7 @@ public class Actions {
         Main_page main_page_object = new Main_page(driver);
 
         sign_obj.login_to_Hive();
-        main_page_object.new_action_name();
+        main_page_object.new_action();
         driver.findElement(main_page_object.test_action).isDisplayed();
 
         driver.quit();
@@ -90,6 +91,39 @@ public class Actions {
         main_page_object.change_private_status();
 
         driver.quit();
+    }
+
+    @Test(priority = 4)
+    public void change_action_title() {
+
+        ChromeDriverManager.getInstance().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Login_page sign_obj = new Login_page(driver);
+        Main_page main_page_object = new Main_page(driver);
+
+        sign_obj.login_to_Hive();
+        main_page_object.change_action_title();
+
+        Assert.assertEquals("action 2", driver.findElement(main_page_object.test_action).getText());
+        driver.quit();
+    }
+    @Test(priority = 5)
+    public void create_new_label() throws InterruptedException {
+
+        ChromeDriverManager.getInstance().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Login_page sign_obj = new Login_page(driver);
+        Main_page main_page_object = new Main_page(driver);
+
+        sign_obj.login_to_Hive();
+        main_page_object.create_new_label();
+
+        Assert.assertEquals("QA", driver.findElement(main_page_object.label_created).getText());
+
+        driver.quit();
+
     }
 
 }

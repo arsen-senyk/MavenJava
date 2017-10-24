@@ -50,20 +50,23 @@ public class Login_page {
         driver.findElement(first_name).sendKeys("Rob");
         driver.findElement(last_name).sendKeys("Wilson");
         driver.findElement(phone).sendKeys("0981234567");
-        driver.findElement(email).click();
+        //driver.findElement(email).click();
         String[] A = data.email.split("");
         for (int i = 0; i < A.length; i++) {
             driver.findElement(email).sendKeys(A[i]);
         }
+        Thread.sleep(500);
         driver.findElement(password).click();
         driver.findElement(password).sendKeys(data.password + Keys.ENTER);
         driver.findElement(workspace_name).sendKeys("Test_Team");
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(driver.findElement(continue4)));
         driver.findElement(continue4).click();
         driver.findElement(coffee).sendKeys(Keys.ENTER);
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(driver.findElement(no_thanks)));
         driver.findElement(no_thanks).click();
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(driver.findElement(no_thanks2)));
         driver.findElement(no_thanks2).click();
+        new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(driver.findElement(next_tip)));
         driver.findElement(next_tip).click();
         driver.findElement(lets_go).click();
         driver.findElement(cross).click();
