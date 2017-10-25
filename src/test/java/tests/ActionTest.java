@@ -15,6 +15,7 @@ import pages.Login_page;
 import pages.Main_page;
 
 
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 
@@ -159,7 +160,7 @@ public class ActionTest {
         driver.quit();
     }
     @Test(priority = 7)
-    public void add_link_to_action_title() throws InterruptedException {
+    public void add_link_to_action_title_and_click() throws InterruptedException {
 
         ChromeDriverManager.getInstance().setup();
         WebDriver driver = new ChromeDriver();
@@ -175,11 +176,12 @@ public class ActionTest {
         new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(driver.findElement(main_page_object.action_link)));
         driver.findElement(main_page_object.action_link).click();
         System.out.println(driver.getTitle());
-        //driver.findElement(By.id("lst-ib")).sendKeys("Hello");
-        //driver.switchTo().window(driver.getWindowHandles().iterator().next());
+
+        ArrayList<String> tabs2 = new ArrayList(driver.getWindowHandles());
+        driver.switchTo().window(tabs2.get(1));
         System.out.println(driver.getTitle());
+        Assert.assertEquals("Google", driver.getTitle());
 
-
-
+        driver.quit();
     }
 }

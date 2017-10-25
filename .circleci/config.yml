@@ -38,7 +38,7 @@ jobs:
           key: v1-dependencies-{{ checksum "pom.xml" }}
 
       # run tests!
-      - run: mvn test
+     # - run: mvn test
 
-      - store_test_results:
-                path: target/surefire-reportsn -s .circleci.settings.xml -DskipTests deploy
+     # - store_test_results:
+              #  path: target/surefire-reportsn -s .circleci.settings.xml -DskipTests deploy
