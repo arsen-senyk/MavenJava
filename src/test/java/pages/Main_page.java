@@ -35,6 +35,8 @@ public class Main_page {
     public By close_buton = By.xpath("//button[text()='Close']");
     public By action_link = By.xpath("//div[@class='action-item-input force-wrap needsclick ']");
     public By new_subaction = By.xpath("//div[@class='js-subaction-new-text needsclick']");
+    public By created_subaction = By.xpath("//div[@class='action-item modal-subaction ui-sortable-handle ui-droppable']");
+    public By subaction_title = By.xpath("//div[@class='action-item-input force-wrap needsclick   '][text()='subaction 1']");
 
     public void new_action(String name) {
 
