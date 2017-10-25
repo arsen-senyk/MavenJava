@@ -28,6 +28,7 @@ public class ActionTest {
         ChromeDriverManager.getInstance().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        System.out.println("TEST: sign_up_test");
         Login_page sign_obj = new Login_page(driver);
         sign_obj.signup_to_Hive(Data.email);
         driver.quit();
@@ -41,10 +42,10 @@ public class ActionTest {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Login_page sign_obj = new Login_page(driver);
         Main_page main_page_object = new Main_page(driver);
-        Data data = new Data();
+        System.out.println("TEST: create_new_action_from_my_Actions");
 
-        sign_obj.login_to_Hive(data.email);
-        main_page_object.new_action();
+        sign_obj.login_to_Hive(Data.email);
+        main_page_object.new_action("Test Action");
         driver.findElement(main_page_object.test_action).isDisplayed();
 
         driver.quit();
@@ -59,9 +60,9 @@ public class ActionTest {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Login_page sign_obj = new Login_page(driver);
         Main_page main_page_object = new Main_page(driver);
-        Data data = new Data();
+        System.out.println("TEST: make_action_urgent");
 
-        sign_obj.login_to_Hive(data.email);
+        sign_obj.login_to_Hive(Data.email);
         main_page_object.make_action_urgent();
 
         driver.quit();
@@ -75,9 +76,10 @@ public class ActionTest {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Login_page sign_obj = new Login_page(driver);
         Main_page main_page_object = new Main_page(driver);
-        Data data = new Data();
 
-        sign_obj.login_to_Hive(data.email);
+        System.out.println("TEST: private_action");
+
+        sign_obj.login_to_Hive(Data.email);
         main_page_object.action_is_private();
 
         driver.quit();
@@ -92,9 +94,9 @@ public class ActionTest {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Login_page sign_obj = new Login_page(driver);
         Main_page main_page_object = new Main_page(driver);
-        Data data = new Data();
+        System.out.println("TEST: change_private_status");
 
-        sign_obj.login_to_Hive(data.email);
+        sign_obj.login_to_Hive(Data.email);
         main_page_object.change_private_status();
 
         driver.quit();
@@ -108,9 +110,9 @@ public class ActionTest {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Login_page sign_obj = new Login_page(driver);
         Main_page main_page_object = new Main_page(driver);
-        Data data = new Data();
+        System.out.println("TEST: change_action_title_press_enter");
 
-        sign_obj.login_to_Hive(data.email);
+        sign_obj.login_to_Hive(Data.email);
         main_page_object.change_action_title_press_enter("action 2");
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.test_action)));
         Assert.assertEquals("action 2", driver.findElement(main_page_object.test_action).getText());
@@ -132,9 +134,9 @@ public class ActionTest {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Login_page sign_obj = new Login_page(driver);
         Main_page main_page_object = new Main_page(driver);
-        Data data = new Data();
+        System.out.println("TEST: change_action_title_click_close");
 
-        sign_obj.login_to_Hive(data.email);
+        sign_obj.login_to_Hive(Data.email);
         main_page_object.change_action_title_press_close("action 3");
 
         Assert.assertEquals("action 3", driver.findElement(main_page_object.test_action).getText());
@@ -151,6 +153,7 @@ public class ActionTest {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Login_page sign_obj = new Login_page(driver);
         Main_page main_page_object = new Main_page(driver);
+        System.out.println("TEST: create_new_label");
 
         sign_obj.login_to_Hive(Data.email);
         main_page_object.create_new_label(label_name);
@@ -168,6 +171,7 @@ public class ActionTest {
         Login_page sign_obj = new Login_page(driver);
         Main_page main_page_object = new Main_page(driver);
         String link = "https://www.google.com.ua";
+        System.out.println("TEST: add_link_to_action_title_and_click");
         sign_obj.login_to_Hive(Data.email);
         main_page_object.change_action_title_press_close(link);
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.action_link)));
@@ -175,13 +179,39 @@ public class ActionTest {
         Thread.sleep(100);
         new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(driver.findElement(main_page_object.action_link)));
         driver.findElement(main_page_object.action_link).click();
-        System.out.println(driver.getTitle());
-
         ArrayList<String> tabs2 = new ArrayList(driver.getWindowHandles());
         driver.switchTo().window(tabs2.get(1));
-        System.out.println(driver.getTitle());
         Assert.assertEquals("Google", driver.getTitle());
 
         driver.quit();
+    }
+    @Test(priority = 8)
+    public void create_new_subaction() {
+
+        ChromeDriverManager.getInstance().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Login_page sign_obj = new Login_page(driver);
+        Main_page main_page_object = new Main_page(driver);
+        System.out.println("TEST: create new subaction");
+        System.out.println("Login to Hive");
+        sign_obj.login_to_Hive(Data.email);
+        System.out.println("Create new action");
+        main_page_object.new_action("Action with subtaction");
+        System.out.println("enter new subaction name");
+        driver.findElement(main_page_object.test_action).click();
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.new_subaction)));
+        driver.findElement(main_page_object.new_subaction).click();
+        driver.findElement(main_page_object.new_subaction).sendKeys("subaction 1" + Keys.ENTER);
+        System.out.println("enter second new subaction name");
+        driver.findElement(main_page_object.new_subaction).click();
+        driver.findElement(main_page_object.new_subaction).sendKeys("subaction 2" + Keys.ENTER);
+        System.out.println("check if second subaction displayed");
+        driver.findElement(By.xpath("//div[@class='action-item-input force-wrap needsclick  move '][text()='subaction 2']")).isDisplayed();
+        driver.findElement(main_page_object.close_buton).click();
+        System.out.println("check if subaction icon displayed on action");
+        driver.findElement(By.xpath("//div[@class='subactions-count']")).isDisplayed();
+        driver.quit();
+
     }
 }

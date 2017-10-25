@@ -32,15 +32,16 @@ public class Main_page {
     By create_new = By.xpath("//a[@class='create-label']");
     By label_name_field = By.id("label-name");
     public By label_created = By.xpath("//span[@class='name'][text()='QA']");
-    By close_buton = By.xpath("//button[text()='Close']");
+    public By close_buton = By.xpath("//button[text()='Close']");
     public By action_link = By.xpath("//div[@class='action-item-input force-wrap needsclick ']");
+    public By new_subaction = By.xpath("//div[@class='js-subaction-new-text needsclick']");
 
-    public void new_action() {
+    public void new_action(String name) {
 
 
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(need_to_be_done)));
         driver.findElement(need_to_be_done).click();
-        driver.findElement(need_to_be_done).sendKeys("Test action");
+        driver.findElement(need_to_be_done).sendKeys(name);
         driver.findElement(create).click();
     }
 
@@ -104,16 +105,11 @@ public class Main_page {
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(test_action)));
         driver.findElement(test_action).click();
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(drop_down_label)));
-        //Thread.sleep(500);
         new Actions(driver).moveToElement(driver.findElement(drop_down_label)).click().perform();
         driver.findElement(create_new).click();
         driver.findElement(label_name_field).sendKeys(label_name + Keys.ENTER);
         new Actions(driver).moveToElement(driver.findElement(drop_down_label)).click().perform();
     }
 
-    public void add_link_to_action_title(String link) {
 
-        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(test_action)));
-        driver.findElement(test_action).click();
-    }
 }

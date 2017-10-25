@@ -1,48 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Test-class Suite" duration-ms="90714" started-at="2017-10-25T07:19:40Z" finished-at="2017-10-25T07:21:11Z">
+  <suite name="Test-class Suite" duration-ms="95077" started-at="2017-10-25T09:18:13Z" finished-at="2017-10-25T09:19:48Z">
     <groups>
     </groups>
-    <test name="Test-class test" duration-ms="90714" started-at="2017-10-25T07:19:40Z" finished-at="2017-10-25T07:21:11Z">
+    <test name="Test-class test" duration-ms="95077" started-at="2017-10-25T09:18:13Z" finished-at="2017-10-25T09:19:48Z">
       <class name="tests.ActionTest">
-        <test-method status="PASS" signature="sign_up_test()[pri:-1, instance:tests.ActionTest@735b478]" name="sign_up_test" duration-ms="17465" started-at="2017-10-25T10:19:40Z" finished-at="2017-10-25T10:19:58Z">
+        <test-method status="PASS" signature="sign_up_test()[pri:-1, instance:tests.ActionTest@735b478]" name="sign_up_test" duration-ms="15586" started-at="2017-10-25T12:18:13Z" finished-at="2017-10-25T12:18:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sign_up_test -->
-        <test-method status="PASS" signature="create_new_action_from_my_Actions()[pri:0, instance:tests.ActionTest@735b478]" name="create_new_action_from_my_Actions" duration-ms="10726" started-at="2017-10-25T10:19:58Z" finished-at="2017-10-25T10:20:08Z">
+        <test-method status="PASS" signature="create_new_action_from_my_Actions()[pri:0, instance:tests.ActionTest@735b478]" name="create_new_action_from_my_Actions" duration-ms="8516" started-at="2017-10-25T12:18:28Z" finished-at="2017-10-25T12:18:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create_new_action_from_my_Actions -->
-        <test-method status="PASS" signature="make_action_urgent()[pri:1, instance:tests.ActionTest@735b478]" name="make_action_urgent" duration-ms="10105" started-at="2017-10-25T10:20:08Z" finished-at="2017-10-25T10:20:19Z">
+        <test-method status="PASS" signature="make_action_urgent()[pri:1, instance:tests.ActionTest@735b478]" name="make_action_urgent" duration-ms="8314" started-at="2017-10-25T12:18:37Z" finished-at="2017-10-25T12:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- make_action_urgent -->
-        <test-method status="PASS" signature="private_action()[pri:2, instance:tests.ActionTest@735b478]" name="private_action" duration-ms="7975" started-at="2017-10-25T10:20:19Z" finished-at="2017-10-25T10:20:27Z">
+        <test-method status="PASS" signature="private_action()[pri:2, instance:tests.ActionTest@735b478]" name="private_action" duration-ms="7980" started-at="2017-10-25T12:18:45Z" finished-at="2017-10-25T12:18:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- private_action -->
-        <test-method status="PASS" signature="change_private_status()[pri:3, instance:tests.ActionTest@735b478]" name="change_private_status" duration-ms="9410" started-at="2017-10-25T10:20:27Z" finished-at="2017-10-25T10:20:36Z">
+        <test-method status="PASS" signature="change_private_status()[pri:3, instance:tests.ActionTest@735b478]" name="change_private_status" duration-ms="9008" started-at="2017-10-25T12:18:53Z" finished-at="2017-10-25T12:19:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- change_private_status -->
-        <test-method status="PASS" signature="change_action_title_press_enter()[pri:4, instance:tests.ActionTest@735b478]" name="change_action_title_press_enter" duration-ms="9584" started-at="2017-10-25T10:20:36Z" finished-at="2017-10-25T10:20:46Z">
+        <test-method status="PASS" signature="change_action_title_press_enter()[pri:4, instance:tests.ActionTest@735b478]" name="change_action_title_press_enter" duration-ms="9493" started-at="2017-10-25T12:19:02Z" finished-at="2017-10-25T12:19:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- change_action_title_press_enter -->
-        <test-method status="PASS" signature="change_action_title_click_close()[pri:5, instance:tests.ActionTest@735b478]" name="change_action_title_click_close" duration-ms="8417" started-at="2017-10-25T10:20:46Z" finished-at="2017-10-25T10:20:54Z">
+        <test-method status="PASS" signature="change_action_title_click_close()[pri:5, instance:tests.ActionTest@735b478]" name="change_action_title_click_close" duration-ms="8353" started-at="2017-10-25T12:19:12Z" finished-at="2017-10-25T12:19:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- change_action_title_click_close -->
-        <test-method status="PASS" signature="create_new_label()[pri:6, instance:tests.ActionTest@735b478]" name="create_new_label" duration-ms="7927" started-at="2017-10-25T10:20:54Z" finished-at="2017-10-25T10:21:02Z">
+        <test-method status="PASS" signature="create_new_label()[pri:6, instance:tests.ActionTest@735b478]" name="create_new_label" duration-ms="8787" started-at="2017-10-25T12:19:20Z" finished-at="2017-10-25T12:19:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create_new_label -->
-        <test-method status="PASS" signature="add_link_to_action_title_and_click()[pri:7, instance:tests.ActionTest@735b478]" name="add_link_to_action_title_and_click" duration-ms="9082" started-at="2017-10-25T10:21:02Z" finished-at="2017-10-25T10:21:11Z">
+        <test-method status="PASS" signature="add_link_to_action_title_and_click()[pri:7, instance:tests.ActionTest@735b478]" name="add_link_to_action_title_and_click" duration-ms="9417" started-at="2017-10-25T12:19:29Z" finished-at="2017-10-25T12:19:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_link_to_action_title_and_click -->
+        <test-method status="PASS" signature="create_new_subaction()[pri:8, instance:tests.ActionTest@735b478]" name="create_new_subaction" duration-ms="9601" started-at="2017-10-25T12:19:38Z" finished-at="2017-10-25T12:19:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_new_subaction -->
       </class> <!-- tests.ActionTest -->
     </test> <!-- Test-class test -->
   </suite> <!-- Test-class Suite -->
