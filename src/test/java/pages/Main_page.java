@@ -19,7 +19,7 @@ public class Main_page {
 
     By need_to_be_done = By.id("action-new-form-input");
     By create = By.xpath("//button[@class='btn btn-sm btn-primary']");
-    public By test_action = By.xpath("//div[@autocomplete='off']");
+    public By test_action = By.xpath("//div[@class='action-item-input force-wrap needsclick  move ']");
     By drop_down_label = By.xpath("//div[@class='select toggles']//div[@class='dropdown label-picker']");
     By description = By.xpath("//div[@class='description-input needsclick']");
     By urgent = By.xpath("//div[@class='urgent-icon-action additional-toggle urgent']");
@@ -28,12 +28,14 @@ public class Main_page {
     By private_icon = By.xpath("//div[@class='lock-icon-action additional-toggle private enabled']");
     By ok = By.xpath("//button[@data-bb-handler='ok']");
     By private_icon_unchecked = By.xpath("//div[@class='lock-icon-action additional-toggle private']");
-    By action_title = By.xpath("//div[@class='action-item-input force-wrap needsclick   ']");
+    public By action_title = By.xpath("//div[@class='action-item-input force-wrap needsclick   ']");
     By create_new = By.xpath("//a[@class='create-label']");
-    By label_name = By.id("label-name");
+    By label_name_field = By.id("label-name");
     public By label_created = By.xpath("//span[@class='name'][text()='QA']");
+    By close_buton = By.xpath("//button[text()='Close']");
+    public By action_link = By.xpath("//div[@class='action-item-input force-wrap needsclick ']");
 
-    public void new_action(){
+    public void new_action() {
 
 
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(need_to_be_done)));
@@ -74,17 +76,30 @@ public class Main_page {
 
     }
 
-    public void change_action_title() {
+    public void change_action_title_press_enter(String new_title) {
 
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(test_action)));
         driver.findElement(test_action).click();
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(action_title)));
         driver.findElement(action_title).clear();
-        driver.findElement(action_title).sendKeys("action 2" + Keys.ENTER);
+        driver.findElement(action_title).sendKeys(new_title + Keys.ENTER);
 
     }
 
-    public void create_new_label() throws InterruptedException {
+    public void change_action_title_press_close (String new_title) {
+
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(test_action)));
+        driver.findElement(test_action).click();
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(action_title)));
+        driver.findElement(action_title).clear();
+        driver.findElement(action_title).sendKeys(new_title);
+
+        new Actions(driver).moveToElement(driver.findElement(close_buton)).click().perform();
+
+
+    }
+
+    public void create_new_label(String label_name) throws InterruptedException {
 
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(test_action)));
         driver.findElement(test_action).click();
@@ -92,10 +107,13 @@ public class Main_page {
         //Thread.sleep(500);
         new Actions(driver).moveToElement(driver.findElement(drop_down_label)).click().perform();
         driver.findElement(create_new).click();
-        driver.findElement(label_name).sendKeys("QA"+Keys.ENTER);
+        driver.findElement(label_name_field).sendKeys(label_name + Keys.ENTER);
         new Actions(driver).moveToElement(driver.findElement(drop_down_label)).click().perform();
+    }
 
+    public void add_link_to_action_title(String link) {
 
-
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(test_action)));
+        driver.findElement(test_action).click();
     }
 }

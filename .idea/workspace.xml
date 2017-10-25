@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e755a6b8-27d9-49e0-8a75-79765709ea7c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/tests/Actions.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Hivetests/pages/Data.java" afterPath="$PROJECT_DIR$/src/test/java/pages/Data.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java" afterPath="$PROJECT_DIR$/src/test/java/pages/Login_page.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java" afterPath="$PROJECT_DIR$/src/test/java/pages/Main_page.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java" afterPath="$PROJECT_DIR$/src/test/java/tests/ActionTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/pages/Data.class" afterPath="$PROJECT_DIR$/target/test-classes/pages/Data.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/pages/Login_page.class" afterPath="$PROJECT_DIR$/target/test-classes/pages/Login_page.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/pages/Main_page.class" afterPath="$PROJECT_DIR$/target/test-classes/pages/Main_page.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/tests/Actions.class" afterPath="$PROJECT_DIR$/target/test-classes/tests/Actions.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Hivetests/pages/Data.java" afterPath="$PROJECT_DIR$/src/test/Hivetests/pages/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java" afterPath="$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java" afterPath="$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java" afterPath="$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SeleniumTestNGMaven.iml" afterPath="$PROJECT_DIR$/SeleniumTestNGMaven.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +26,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Data.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Data.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/Data.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
               <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
@@ -32,23 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Actions.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java">
+      <file leaf-file-name="ActionTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/ActionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2232">
-              <caret line="124" column="22" lean-forward="false" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main_page.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+            <state relative-caret-position="684">
+              <caret line="185" column="0" lean-forward="false" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,10 +48,22 @@
         </entry>
       </file>
       <file leaf-file-name="Login_page.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/Login_page.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+            <state relative-caret-position="606">
+              <caret line="81" column="10" lean-forward="false" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main_page.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pages/Main_page.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1032">
+              <caret line="35" column="97" lean-forward="false" selection-start-line="35" selection-start-column="97" selection-end-line="35" selection-end-column="97" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,11 +95,14 @@
         <option value="$PROJECT_DIR$/src/test/java/NewTest2.java" />
         <option value="$PROJECT_DIR$/src/test/Gmail/tests/inbox_page_social.java" />
         <option value="$PROJECT_DIR$/src/test/Gmail/pages/login_page.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java" />
-        <option value="$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java" />
         <option value="$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java" />
         <option value="$PROJECT_DIR$/src/test/Hivetests/pages/Data.java" />
+        <option value="$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java" />
+        <option value="$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/Data.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/ActionTest.java" />
       </list>
     </option>
   </component>
@@ -107,7 +113,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="292" />
     <option name="y" value="52" />
     <option name="width" value="1400" />
@@ -159,14 +165,14 @@
               <item name="MavenJava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="Hivetests" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Selenium" type="b2602c69:ProjectViewProjectNode" />
               <item name="MavenJava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="Hivetests" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -174,7 +180,7 @@
               <item name="MavenJava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="Hivetests" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -191,6 +197,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -203,7 +214,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Actions">
+  <component name="RunManager" selected="TestNG.ActionTest.add_link_to_action_title">
+    <configuration name="ActionTest.add_link_to_action_title" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SeleniumTestNGMaven" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ActionTest" />
+      <option name="METHOD_NAME" value="add_link_to_action_title" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration name="Actions" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -236,7 +279,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Actions.change_action_title" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Actions.add_link_to_action_title" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -249,7 +292,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.Actions" />
-      <option name="METHOD_NAME" value="change_action_title" />
+      <option name="METHOD_NAME" value="add_link_to_action_title" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -268,7 +311,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Actions.change_private_status" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Actions.change_action_title_click_close" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="tests.*" />
@@ -281,7 +324,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.Actions" />
-      <option name="METHOD_NAME" value="change_private_status" />
+      <option name="METHOD_NAME" value="change_action_title_click_close" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -300,54 +343,17 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Actions.create_new_label" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="/home/arsen/IdeaProjects/MavenJava/testng.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="SeleniumTestNGMaven" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Actions" />
-      <option name="METHOD_NAME" value="create_new_label" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="Actions.private_action" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SeleniumTestNGMaven" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Actions" />
-      <option name="METHOD_NAME" value="private_action" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -447,18 +453,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="TestNG.Actions" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.Actions.private_action" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.Actions.change_private_status" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.Actions.change_action_title" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.Actions.create_new_label" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.Actions.change_action_title_click_close" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.Actions.add_link_to_action_title" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG./home/arsen/IdeaProjects/MavenJava/testng.xml" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.ActionTest.add_link_to_action_title" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.Actions" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.Actions.create_new_label" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.Actions.change_action_title" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.Actions.change_private_status" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.Actions.private_action" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.ActionTest.add_link_to_action_title" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG./home/arsen/IdeaProjects/MavenJava/testng.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.Actions.add_link_to_action_title" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.Actions.change_action_title_click_close" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.Actions" />
       </list>
     </recent_temporary>
   </component>
@@ -476,39 +482,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Actions - 2017.10.24 at 12h 45m 08s.xml">
-      <configuration name="Actions" configurationId="TestNG" />
+    <history-entry file="ActionTest_add_link_to_action_title - 2017.10.25 at 09h 41m 33s.xml">
+      <configuration name="ActionTest.add_link_to_action_title" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions - 2017.10.24 at 12h 46m 31s.xml">
-      <configuration name="Actions" configurationId="TestNG" />
+    <history-entry file="Actions_add_link_to_action_title - 2017.10.24 at 18h 09m 21s.xml">
+      <configuration name="Actions.add_link_to_action_title" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions - 2017.10.24 at 12h 49m 21s.xml">
-      <configuration name="Actions" configurationId="TestNG" />
+    <history-entry file="Actions_add_link_to_action_title - 2017.10.24 at 18h 20m 01s.xml">
+      <configuration name="Actions.add_link_to_action_title" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions_create_new_label - 2017.10.24 at 12h 21m 34s.xml">
-      <configuration name="Actions.create_new_label" configurationId="TestNG" />
+    <history-entry file="Actions_add_link_to_action_title - 2017.10.24 at 18h 21m 40s.xml">
+      <configuration name="Actions.add_link_to_action_title" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions_create_new_label - 2017.10.24 at 12h 22m 01s.xml">
-      <configuration name="Actions.create_new_label" configurationId="TestNG" />
+    <history-entry file="Actions_add_link_to_action_title - 2017.10.24 at 18h 25m 41s.xml">
+      <configuration name="Actions.add_link_to_action_title" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions_create_new_label - 2017.10.24 at 12h 24m 56s.xml">
-      <configuration name="Actions.create_new_label" configurationId="TestNG" />
+    <history-entry file="Actions_add_link_to_action_title - 2017.10.24 at 18h 27m 08s.xml">
+      <configuration name="Actions.add_link_to_action_title" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions_create_new_label - 2017.10.24 at 12h 26m 41s.xml">
-      <configuration name="Actions.create_new_label" configurationId="TestNG" />
+    <history-entry file="Actions_add_link_to_action_title - 2017.10.24 at 18h 30m 26s.xml">
+      <configuration name="Actions.add_link_to_action_title" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions_create_new_label - 2017.10.24 at 12h 29m 09s.xml">
-      <configuration name="Actions.create_new_label" configurationId="TestNG" />
+    <history-entry file="Actions_add_link_to_action_title - 2017.10.24 at 18h 31m 11s.xml">
+      <configuration name="Actions.add_link_to_action_title" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions_create_new_label - 2017.10.24 at 12h 31m 03s.xml">
-      <configuration name="Actions.create_new_label" configurationId="TestNG" />
+    <history-entry file="Actions_add_link_to_action_title - 2017.10.24 at 18h 32m 48s.xml">
+      <configuration name="Actions.add_link_to_action_title" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Actions_create_new_label - 2017.10.24 at 12h 31m 28s.xml">
-      <configuration name="Actions.create_new_label" configurationId="TestNG" />
+    <history-entry file="_home_arsen_IdeaProjects_MavenJava_testng_xml - 2017.10.25 at 09h 28m 48s.xml">
+      <configuration name="/home/arsen/IdeaProjects/MavenJava/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -519,8 +525,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -579,7 +585,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Data.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
@@ -587,7 +593,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Main_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1710">
           <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
@@ -597,7 +603,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Login_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
@@ -607,7 +613,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ActionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2088">
           <caret line="116" column="44" lean-forward="false" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
@@ -617,7 +623,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Data.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
@@ -625,7 +631,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Main_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1602">
           <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
@@ -635,7 +641,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Login_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
@@ -645,7 +651,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ActionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1890">
           <caret line="116" column="44" lean-forward="false" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
@@ -655,7 +661,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Data.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
@@ -663,7 +669,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ActionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2088">
           <caret line="116" column="44" lean-forward="false" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
@@ -673,7 +679,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Login_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
@@ -683,7 +689,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Main_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
@@ -693,7 +699,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Data.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
@@ -708,7 +714,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Main_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
@@ -718,7 +724,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Login_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1152">
           <caret line="64" column="8" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="117" />
@@ -736,7 +742,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ActionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1368">
           <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
@@ -746,7 +752,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Data.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -754,7 +760,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ActionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
@@ -764,7 +770,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Main_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
@@ -774,7 +780,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Login_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1152">
           <caret line="64" column="8" lean-forward="false" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="117" />
@@ -815,35 +821,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Login_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="81" column="10" lean-forward="false" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Main_page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1032">
+          <caret line="35" column="97" lean-forward="false" selection-start-line="35" selection-start-column="97" selection-end-line="35" selection-end-column="97" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state relative-caret-position="504">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Main_page.java">
+    <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="162">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Login_page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="73" column="5" lean-forward="false" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/pages/Data.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
@@ -851,10 +865,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Hivetests/tests/Actions.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ActionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2232">
-          <caret line="124" column="22" lean-forward="false" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
+        <state relative-caret-position="684">
+          <caret line="185" column="0" lean-forward="false" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

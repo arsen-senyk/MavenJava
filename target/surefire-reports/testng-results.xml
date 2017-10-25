@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test-class Suite" duration-ms="90658" started-at="2017-10-25T06:49:09Z" finished-at="2017-10-25T06:50:40Z">
+    <groups>
+    </groups>
+    <test name="Test-class test" duration-ms="90658" started-at="2017-10-25T06:49:09Z" finished-at="2017-10-25T06:50:40Z">
+      <class name="tests.ActionTest">
+        <test-method status="PASS" signature="sign_up_test()[pri:-1, instance:tests.ActionTest@735b478]" name="sign_up_test" duration-ms="14888" started-at="2017-10-25T09:49:09Z" finished-at="2017-10-25T09:49:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sign_up_test -->
+        <test-method status="PASS" signature="create_new_action_from_my_Actions()[pri:0, instance:tests.ActionTest@735b478]" name="create_new_action_from_my_Actions" duration-ms="7579" started-at="2017-10-25T09:49:24Z" finished-at="2017-10-25T09:49:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_new_action_from_my_Actions -->
+        <test-method status="PASS" signature="make_action_urgent()[pri:1, instance:tests.ActionTest@735b478]" name="make_action_urgent" duration-ms="9265" started-at="2017-10-25T09:49:32Z" finished-at="2017-10-25T09:49:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- make_action_urgent -->
+        <test-method status="PASS" signature="private_action()[pri:2, instance:tests.ActionTest@735b478]" name="private_action" duration-ms="7894" started-at="2017-10-25T09:49:41Z" finished-at="2017-10-25T09:49:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- private_action -->
+        <test-method status="PASS" signature="change_private_status()[pri:3, instance:tests.ActionTest@735b478]" name="change_private_status" duration-ms="8418" started-at="2017-10-25T09:49:49Z" finished-at="2017-10-25T09:49:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- change_private_status -->
+        <test-method status="PASS" signature="change_action_title_press_enter()[pri:4, instance:tests.ActionTest@735b478]" name="change_action_title_press_enter" duration-ms="17275" started-at="2017-10-25T09:49:57Z" finished-at="2017-10-25T09:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- change_action_title_press_enter -->
+        <test-method status="PASS" signature="change_action_title_click_close()[pri:5, instance:tests.ActionTest@735b478]" name="change_action_title_click_close" duration-ms="8314" started-at="2017-10-25T09:50:15Z" finished-at="2017-10-25T09:50:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- change_action_title_click_close -->
+        <test-method status="PASS" signature="create_new_label()[pri:6, instance:tests.ActionTest@735b478]" name="create_new_label" duration-ms="8570" started-at="2017-10-25T09:50:23Z" finished-at="2017-10-25T09:50:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_new_label -->
+        <test-method status="PASS" signature="add_link_to_action_title()[pri:7, instance:tests.ActionTest@735b478]" name="add_link_to_action_title" duration-ms="8433" started-at="2017-10-25T09:50:32Z" finished-at="2017-10-25T09:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_link_to_action_title -->
+      </class> <!-- tests.ActionTest -->
+    </test> <!-- Test-class test -->
+  </suite> <!-- Test-class Suite -->
+</testng-results>

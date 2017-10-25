@@ -39,19 +39,21 @@ public class Login_page {
     public Login_page(WebDriver driver){
         this.driver = driver;
     }
-    public void signup_to_Hive() throws InterruptedException {
+
+    public void signup_to_Hive(String user_email) throws InterruptedException {
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(data.url);
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
         driver.findElement(join_hive).click();
         System.out.println(driver.getTitle());
         driver.findElement(continue_buton).click();
         driver.findElement(first_name).sendKeys("Rob");
         driver.findElement(last_name).sendKeys("Wilson");
         driver.findElement(phone).sendKeys("0981234567");
-        //driver.findElement(email).click();
-        String[] A = data.email.split("");
+        driver.findElement(email).click();
+        Thread.sleep(500);
+        String[] A = user_email.split("");
         for (int i = 0; i < A.length; i++) {
             driver.findElement(email).sendKeys(A[i]);
         }
@@ -73,14 +75,14 @@ public class Login_page {
 
     }
 
-    public void login_to_Hive() {
+    public void login_to_Hive(String login) {
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(data.url);
-        driver.manage().window().maximize();
-        driver.findElement(login_field).sendKeys(data.email);
+        //driver.manage().window().maximize();
+        driver.findElement(login_field).sendKeys(login);
         driver.findElement(password_field).sendKeys(data.password + Keys.ENTER);
-        //driver.findElement(signin).click();
+
 
     }
 
