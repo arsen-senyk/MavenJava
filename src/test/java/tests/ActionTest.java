@@ -3,9 +3,11 @@ package tests;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -13,15 +15,12 @@ import org.testng.annotations.Test;
 import pages.Data;
 import pages.Login_page;
 import pages.Main_page;
-
-
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 
 public class ActionTest {
 
-    //@BeforeSuite
     @Test(priority = -1)
     public void sign_up_test() throws InterruptedException {
 
@@ -63,6 +62,7 @@ public class ActionTest {
         System.out.println("TEST: make_action_urgent");
 
         sign_obj.login_to_Hive(Data.email);
+        main_page_object.new_action("Test Action 1");
         main_page_object.make_action_urgent();
 
         driver.quit();
@@ -97,6 +97,7 @@ public class ActionTest {
         System.out.println("TEST: change_private_status");
 
         sign_obj.login_to_Hive(Data.email);
+        main_page_object.new_action("Test Action 2");
         main_page_object.change_private_status();
 
         driver.quit();
@@ -138,6 +139,8 @@ public class ActionTest {
         System.out.println("TEST: change_action_title_click_close");
 
         sign_obj.login_to_Hive(Data.email);
+
+        main_page_object.new_action("Test Action 2");
         main_page_object.change_action_title_press_close("action 3");
 
         Assert.assertEquals(driver.findElement(main_page_object.test_action).getText(), "action 3");
@@ -157,6 +160,7 @@ public class ActionTest {
         System.out.println("TEST: create_new_label");
 
         sign_obj.login_to_Hive(Data.email);
+        main_page_object.new_action("Test Action 2");
         main_page_object.create_new_label(label_name);
 
         Assert.assertEquals(driver.findElement(main_page_object.label_created).getText(), label_name);
@@ -175,6 +179,7 @@ public class ActionTest {
 
         System.out.println("TEST: add_link_to_action_title_and_click");
         sign_obj.login_to_Hive(Data.email);
+        main_page_object.new_action("Action 5");
         main_page_object.change_action_title_press_close(link);
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.action_link)));
 
@@ -196,14 +201,15 @@ public class ActionTest {
         ChromeDriverManager.getInstance().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
         Login_page sign_obj = new Login_page(driver);
         Main_page main_page_object = new Main_page(driver);
         System.out.println("TEST: create new subaction");
 
-        System.out.println("Login to Hive");
+        System.out.println("login to Hive");
         sign_obj.login_to_Hive(Data.email);
 
-        System.out.println("Create new action");
+        System.out.println("create new action");
         main_page_object.new_action("Action with subtaction");
 
         System.out.println("enter new subaction name");
@@ -236,7 +242,7 @@ public class ActionTest {
         Main_page main_page_object = new Main_page(driver);
         System.out.println("TEST: go to subaction");
 
-        System.out.println("Login to Hive");
+        System.out.println("login to Hive");
         sign_obj.login_to_Hive(Data.email);
 
         System.out.println("open action");
@@ -246,13 +252,86 @@ public class ActionTest {
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.created_subaction)));
         driver.findElement(main_page_object.created_subaction).click();
 
-        System.out.println("Check if correct subaction modal opened");
+        System.out.println("check if correct subaction modal opened");
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.subaction_title)));
         Assert.assertEquals(driver.findElement(main_page_object.subaction_title).getText(), "subaction 1");
 
         driver.quit();
-
-
-
     }
+    @Test(priority = 10)
+    public void create_subaction_url_in_title_and_click() {
+
+        ChromeDriverManager.getInstance().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Login_page sign_obj = new Login_page(driver);
+        Main_page main_page_object = new Main_page(driver);
+        System.out.println("TEST: go to subaction");
+
+        System.out.println("login to Hive");
+        sign_obj.login_to_Hive(Data.email);
+
+        System.out.println("create new action");
+        main_page_object.new_action("Action 2 with subtaction ");
+
+        System.out.println("enter new subaction name as link");
+        driver.findElement(main_page_object.test_action).click();
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.new_subaction)));
+        driver.findElement(main_page_object.new_subaction).click();
+        driver.findElement(main_page_object.new_subaction).sendKeys("https://www.google.com.ua" + Keys.ENTER);
+
+        System.out.println("check if subaction with link created");
+        Assert.assertEquals(driver.findElement(main_page_object.new_subaction_link).getText(), "https://www.google.com.ua");
+
+        System.out.println("click on subaction title link");
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", driver.findElement(By.xpath("//a[@href='https://www.google.com.ua']")));
+
+        System.out.println("check if click on link works");
+        ArrayList<String> tabs = new ArrayList(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+        Assert.assertEquals(driver.getTitle(), "Google");
+
+        driver.quit();
+    }
+    @Test(priority = 11)
+    public void complite_subaction() throws InterruptedException {
+
+        ChromeDriverManager.getInstance().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Login_page sign_obj = new Login_page(driver);
+        Main_page main_page_object = new Main_page(driver);
+        System.out.println("TEST: go to subaction");
+
+        System.out.println("login to Hive");
+        sign_obj.login_to_Hive(Data.email);
+
+        System.out.println("create new action");
+        main_page_object.new_action("action 2 with subtaction ");
+
+        System.out.println("enter new subaction name");
+        driver.findElement(main_page_object.test_action).click();
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.new_subaction)));
+        driver.findElement(main_page_object.new_subaction).click();
+        driver.findElement(main_page_object.new_subaction).sendKeys("subaction" + Keys.ENTER);
+
+        System.out.println("click on subaction title");
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.subaction)));
+        driver.findElement(main_page_object.subaction).click();
+
+
+        System.out.println("click on complite icon");
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", driver.findElement(main_page_object.complite_box));
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//button[@class='btn btn-primary']"))));
+        driver.findElement(By.xpath("//button[@class='btn btn-primary']")).click();
+
+        System.out.println("check status is completed");
+        Thread.sleep(1000);
+        Assert.assertEquals(driver.findElement(main_page_object.status).getText(), "Completed");
+
+        driver.quit();
+    }
+
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="104.226" tests="11" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="142.399" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -41,7 +41,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -59,15 +59,17 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="sign_up_test" classname="tests.ActionTest" time="16.758"/>
-  <testcase name="create_new_action_from_my_Actions" classname="tests.ActionTest" time="7.854"/>
-  <testcase name="make_action_urgent" classname="tests.ActionTest" time="8.09"/>
-  <testcase name="private_action" classname="tests.ActionTest" time="8.055"/>
-  <testcase name="change_private_status" classname="tests.ActionTest" time="9.418"/>
-  <testcase name="change_action_title_press_enter" classname="tests.ActionTest" time="9.321"/>
-  <testcase name="change_action_title_click_close" classname="tests.ActionTest" time="8.152"/>
-  <testcase name="create_new_label" classname="tests.ActionTest" time="8.671"/>
-  <testcase name="add_link_to_action_title_and_click" classname="tests.ActionTest" time="9.195"/>
-  <testcase name="create_new_subaction" classname="tests.ActionTest" time="9.753"/>
-  <testcase name="go_to_subaction" classname="tests.ActionTest" time="8.959"/>
+  <testcase name="sign_up_test" classname="tests.ActionTest" time="17.328"/>
+  <testcase name="create_new_action_from_my_Actions" classname="tests.ActionTest" time="9.034"/>
+  <testcase name="make_action_urgent" classname="tests.ActionTest" time="8.763"/>
+  <testcase name="private_action" classname="tests.ActionTest" time="8.18"/>
+  <testcase name="change_private_status" classname="tests.ActionTest" time="14.537"/>
+  <testcase name="change_action_title_press_enter" classname="tests.ActionTest" time="10.241"/>
+  <testcase name="change_action_title_click_close" classname="tests.ActionTest" time="9.795"/>
+  <testcase name="create_new_label" classname="tests.ActionTest" time="10.086"/>
+  <testcase name="add_link_to_action_title_and_click" classname="tests.ActionTest" time="10.836"/>
+  <testcase name="create_new_subaction" classname="tests.ActionTest" time="10.579"/>
+  <testcase name="go_to_subaction" classname="tests.ActionTest" time="9.473"/>
+  <testcase name="create_subaction_url_in_title_and_click" classname="tests.ActionTest" time="10.194"/>
+  <testcase name="complite_subaction" classname="tests.ActionTest" time="13.353"/>
 </testsuite>

@@ -18,7 +18,7 @@ public class Main_page {
     WebDriver driver;
 
     By need_to_be_done = By.id("action-new-form-input");
-    By create = By.xpath("//button[@class='btn btn-sm btn-primary']");
+    By create = By.xpath("//button[@class='btn btn-sm btn-primary'][text()='Create']");
     public By test_action = By.xpath("//div[@class='action-item-input force-wrap needsclick  move ']");
     By drop_down_label = By.xpath("//div[@class='select toggles']//div[@class='dropdown label-picker']");
     By description = By.xpath("//div[@class='description-input needsclick']");
@@ -37,14 +37,19 @@ public class Main_page {
     public By new_subaction = By.xpath("//div[@class='js-subaction-new-text needsclick']");
     public By created_subaction = By.xpath("//div[@class='action-item modal-subaction ui-sortable-handle ui-droppable']");
     public By subaction_title = By.xpath("//div[@class='action-item-input force-wrap needsclick   '][text()='subaction 1']");
+    public By new_subaction_link = By.xpath("//a[@class='autolink autolink-url']");
+    public By subaction = By.xpath("//div[@class='action-item modal-subaction ui-droppable']");
+    public By complite_box = By.xpath("//div[@class='checkbox-custom']//i[@class='fa fa-check']");
+    public By status = By.xpath("//div[@class='pipeline-dropdown dropdown text-center']//span[@class='truncate']");
 
     public void new_action(String name) {
 
 
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(need_to_be_done)));
         driver.findElement(need_to_be_done).click();
-        driver.findElement(need_to_be_done).sendKeys(name);
-        driver.findElement(create).click();
+        driver.findElement(need_to_be_done).sendKeys(name + Keys.ENTER);
+        //new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(driver.findElement(create)));
+        //driver.findElement(create).click();
     }
 
     public void make_action_urgent(){
