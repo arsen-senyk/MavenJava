@@ -1,3 +1,4 @@
+tests/Google_signin.class
 pages/Data.class
 tests/ActionTest.class
 pages/Login_page.class

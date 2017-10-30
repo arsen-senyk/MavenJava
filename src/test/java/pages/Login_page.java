@@ -24,7 +24,7 @@ public class Login_page {
     By password = By.id("password");
     By workspace_name = By.xpath("//input[@class='js-workspace-input input__field']");
     By coffee = By.xpath("//input[@class='js-action-input']");
-    By continue4 = By.xpath("//button[@type='submit'][@class='hv btn btn-primary js-complete-step ladda-button']");
+    public static By continue4 = By.xpath("//button[@type='submit'][@class='hv btn btn-primary js-complete-step ladda-button']");
     By no_thanks = By.xpath("//button[@class='hv btn btn-default js-skip-step']");
     By no_thanks2 = By.xpath("//button[@class='hv btn btn-default js-complete-step']");
     By next_tip = By.xpath("//span[text()='Next tip']");
@@ -52,12 +52,12 @@ public class Login_page {
         driver.findElement(last_name).sendKeys("Wilson");
         driver.findElement(phone).sendKeys("0981234567");
         driver.findElement(email).click();
-        Thread.sleep(500);
+        Main_page.wait_page_loaded();
         String[] A = user_email.split("");
         for (int i = 0; i < A.length; i++) {
             driver.findElement(email).sendKeys(A[i]);
         }
-        Thread.sleep(500);
+        Main_page.wait_page_loaded();
         driver.findElement(password).click();
         driver.findElement(password).sendKeys(data.password + Keys.ENTER);
         driver.findElement(workspace_name).sendKeys("Test_Team");

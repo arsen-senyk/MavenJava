@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="142.399" tests="13" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="180.04" tests="16" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
@@ -59,17 +59,41 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="sign_up_test" classname="tests.ActionTest" time="17.328"/>
-  <testcase name="create_new_action_from_my_Actions" classname="tests.ActionTest" time="9.034"/>
-  <testcase name="make_action_urgent" classname="tests.ActionTest" time="8.763"/>
-  <testcase name="private_action" classname="tests.ActionTest" time="8.18"/>
-  <testcase name="change_private_status" classname="tests.ActionTest" time="14.537"/>
-  <testcase name="change_action_title_press_enter" classname="tests.ActionTest" time="10.241"/>
-  <testcase name="change_action_title_click_close" classname="tests.ActionTest" time="9.795"/>
-  <testcase name="create_new_label" classname="tests.ActionTest" time="10.086"/>
-  <testcase name="add_link_to_action_title_and_click" classname="tests.ActionTest" time="10.836"/>
-  <testcase name="create_new_subaction" classname="tests.ActionTest" time="10.579"/>
-  <testcase name="go_to_subaction" classname="tests.ActionTest" time="9.473"/>
-  <testcase name="create_subaction_url_in_title_and_click" classname="tests.ActionTest" time="10.194"/>
-  <testcase name="complite_subaction" classname="tests.ActionTest" time="13.353"/>
+  <testcase name="google_signin" classname="tests.Google_signin" time="13.248">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at tests.Google_signin.google_signin(Google_signin.java:33)
+</failure>
+    <system-out><![CDATA[[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or not work as expected.
+TEST: google_signin
+TEST: sign_up_test
+Hive: Home for busy teams
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4) on port 21996
+Only local connections are allowed.
+Starting ChromeDriver 2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4) on port 8117
+Only local connections are allowed.
+Oct 30, 2017 3:57:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Oct 30, 2017 3:57:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="sign_up_test" classname="tests.ActionTest" time="18.228"/>
+  <testcase name="create_new_action_from_my_Actions" classname="tests.ActionTest" time="7.792"/>
+  <testcase name="make_action_urgent" classname="tests.ActionTest" time="9.21"/>
+  <testcase name="private_action" classname="tests.ActionTest" time="8.039"/>
+  <testcase name="change_private_status" classname="tests.ActionTest" time="13.367"/>
+  <testcase name="change_action_title_press_enter" classname="tests.ActionTest" time="9.725"/>
+  <testcase name="change_action_title_click_close" classname="tests.ActionTest" time="10.281"/>
+  <testcase name="create_new_label" classname="tests.ActionTest" time="9.319"/>
+  <testcase name="add_link_to_action_title_and_click" classname="tests.ActionTest" time="12.088"/>
+  <testcase name="create_new_subaction" classname="tests.ActionTest" time="10.07"/>
+  <testcase name="go_to_subaction" classname="tests.ActionTest" time="9.39"/>
+  <testcase name="create_subaction_url_in_title_and_click" classname="tests.ActionTest" time="10.316"/>
+  <testcase name="complite_subaction" classname="tests.ActionTest" time="11.914"/>
+  <testcase name="select_value_on_assignee_picker" classname="tests.ActionTest" time="9.512"/>
+  <testcase name="Add_comment_to_action" classname="tests.ActionTest" time="17.541"/>
 </testsuite>

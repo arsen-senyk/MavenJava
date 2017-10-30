@@ -2,15 +2,14 @@ package tests;
 
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.Data;
 import pages.Login_page;
@@ -19,9 +18,11 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 
+
+
 public class ActionTest {
 
-    @Test(priority = -1)
+    @Test
     public void sign_up_test() throws InterruptedException {
 
         ChromeDriverManager.getInstance().setup();
@@ -33,7 +34,7 @@ public class ActionTest {
         driver.quit();
     }
 
-    @Test
+    @Test(priority = 1)
     public void create_new_action_from_my_Actions() {
 
         ChromeDriverManager.getInstance().setup();
@@ -51,7 +52,7 @@ public class ActionTest {
 
     }
 
-    @Test(priority = 1)
+    @Test(priority = 2)
     public void make_action_urgent(){
 
         ChromeDriverManager.getInstance().setup();
@@ -68,7 +69,7 @@ public class ActionTest {
         driver.quit();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 3)
     public void private_action() {
 
         ChromeDriverManager.getInstance().setup();
@@ -86,7 +87,7 @@ public class ActionTest {
 
     }
 
-    @Test(priority = 3)
+    @Test(priority = 4)
     public void change_private_status() {
 
         ChromeDriverManager.getInstance().setup();
@@ -103,7 +104,7 @@ public class ActionTest {
         driver.quit();
     }
 
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void change_action_title_press_enter() throws InterruptedException {
 
         ChromeDriverManager.getInstance().setup();
@@ -118,7 +119,8 @@ public class ActionTest {
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.test_action)));
 
         Assert.assertEquals(driver.findElement(main_page_object.test_action).getText(),"action 2");
-        Thread.sleep(300);
+
+        main_page_object.wait_page_loaded();
 
         main_page_object.change_action_title_press_enter("");
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.test_action)));
@@ -128,7 +130,7 @@ public class ActionTest {
 
     }
 
-    @Test(priority = 5)
+    @Test(priority = 6)
     public void change_action_title_click_close() throws InterruptedException {
 
         ChromeDriverManager.getInstance().setup();
@@ -148,7 +150,7 @@ public class ActionTest {
         driver.quit();
 
     }
-    @Test(priority = 6)
+    @Test(priority = 7)
     public void create_new_label() throws InterruptedException {
 
         String label_name = "QA";
@@ -167,7 +169,7 @@ public class ActionTest {
 
         driver.quit();
     }
-    @Test(priority = 7)
+    @Test(priority = 8)
     public void add_link_to_action_title_and_click() throws InterruptedException {
 
         ChromeDriverManager.getInstance().setup();
@@ -185,7 +187,8 @@ public class ActionTest {
 
         Assert.assertEquals(driver.findElement(main_page_object.action_link).getText(), link);
 
-        Thread.sleep(100);
+        main_page_object.wait_page_loaded();
+
         new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(driver.findElement(main_page_object.action_link)));
         driver.findElement(main_page_object.action_link).click();
         ArrayList<String> tabs2 = new ArrayList(driver.getWindowHandles());
@@ -195,7 +198,7 @@ public class ActionTest {
 
         driver.quit();
     }
-    @Test(priority = 8)
+    @Test(priority = 9)
     public void create_new_subaction() {
 
         ChromeDriverManager.getInstance().setup();
@@ -232,7 +235,7 @@ public class ActionTest {
         driver.quit();
 
     }
-    @Test(priority = 9)
+    @Test(priority = 10)
     public void go_to_subaction() throws InterruptedException {
 
         ChromeDriverManager.getInstance().setup();
@@ -258,7 +261,7 @@ public class ActionTest {
 
         driver.quit();
     }
-    @Test(priority = 10)
+    @Test(priority = 11)
     public void create_subaction_url_in_title_and_click() {
 
         ChromeDriverManager.getInstance().setup();
@@ -294,7 +297,7 @@ public class ActionTest {
 
         driver.quit();
     }
-    @Test(priority = 11)
+    @Test(priority = 12)
     public void complite_subaction() throws InterruptedException {
 
         ChromeDriverManager.getInstance().setup();
@@ -328,8 +331,70 @@ public class ActionTest {
         driver.findElement(By.xpath("//button[@class='btn btn-primary']")).click();
 
         System.out.println("check status is completed");
-        Thread.sleep(1000);
+        main_page_object.wait_page_loaded();
         Assert.assertEquals(driver.findElement(main_page_object.status).getText(), "Completed");
+
+        driver.quit();
+    }
+    @Test(priority = 13)
+    public void select_value_on_assignee_picker() {
+
+        ChromeDriverManager.getInstance().setup();
+        WebDriver driver = new ChromeDriver();
+
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Login_page sign_obj = new Login_page(driver);
+        Main_page main_page_object = new Main_page(driver);
+        System.out.println("TEST: go to subaction");
+
+        System.out.println("login to Hive");
+        sign_obj.login_to_Hive(Data.email);
+
+        System.out.println("create new action");
+        main_page_object.new_action("Action 7");
+        driver.findElement(main_page_object.action_created).click();
+
+        System.out.println("change assignee");
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.assignee_icon)));
+        driver.findElement(main_page_object.assignee_icon).click();
+        driver.findElement(main_page_object.unassigned).click();
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.ok)));
+        driver.findElement(main_page_object.ok).click();
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", driver.findElement(main_page_object.assignee_icon2));
+
+        System.out.println("check if is unassigned");
+        driver.findElement(main_page_object.unassignee_icon).isDisplayed();
+        driver.quit();
+    }
+
+    @Test(priority = 14)
+    public void Add_comment_to_action() {
+
+        ChromeDriverManager.getInstance().setup();
+        WebDriver driver = new ChromeDriver();
+
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Login_page sign_obj = new Login_page(driver);
+        Main_page main_page_object = new Main_page(driver);
+        System.out.println("TEST: go to subaction");
+
+        System.out.println("login to Hive");
+        sign_obj.login_to_Hive(Data.email);
+
+        System.out.println("create new action");
+        main_page_object.new_action("Action 8");
+        driver.findElement(main_page_object.action_created).click();
+
+        System.out.println("add comment");
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.add_comment)));
+        driver.findElement(main_page_object.add_comment).click();
+        driver.findElement(main_page_object.add_comment).sendKeys("New comment added" + Keys.ENTER);
+
+        System.out.println("check if comment added");
+        Assert.assertEquals(driver.findElement(By.xpath("//p[text()='New comment added']")).getText(), "New comment added");
+
+        driver.findElement(main_page_object.delete_icon).click();
 
         driver.quit();
     }

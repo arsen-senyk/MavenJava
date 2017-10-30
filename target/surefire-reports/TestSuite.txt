@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 142.62 sec - in TestSuite
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 167.012 sec <<< FAILURE! - in TestSuite
+google_signin(tests.Google_signin)  Time elapsed: 13.248 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at tests.Google_signin.google_signin(Google_signin.java:33)
+
