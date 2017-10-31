@@ -1,5 +1,5 @@
-tests/Google_signin.class
 pages/Data.class
 tests/ActionTest.class
+tests/Project_Modal.class
 pages/Login_page.class
 pages/Main_page.class

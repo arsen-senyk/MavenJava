@@ -48,9 +48,17 @@ public class Login_page {
         driver.findElement(join_hive).click();
         System.out.println(driver.getTitle());
         driver.findElement(continue_buton).click();
+        Main_page.wait_page_loaded();
         driver.findElement(first_name).sendKeys("Rob");
+        Main_page.wait_page_loaded();
         driver.findElement(last_name).sendKeys("Wilson");
-        driver.findElement(phone).sendKeys("0981234567");
+
+        Main_page.wait_page_loaded();
+        String[] B = "0981234567".split("");
+        for (int i = 0; i < B.length; i++) {
+            driver.findElement(phone).sendKeys(B[i]);
+        }
+        //driver.findElement(phone).sendKeys("0981234567");
         driver.findElement(email).click();
         Main_page.wait_page_loaded();
         String[] A = user_email.split("");

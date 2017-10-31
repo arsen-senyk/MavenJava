@@ -1,3 +1,5 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
 <suite name="Automation Suite" allow-return-values="true" verbose="1" parallel="tests" thread-count="2">
     <test name="Login Test cases 01">
         <classes>

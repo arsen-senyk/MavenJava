@@ -51,11 +51,26 @@ public class Main_page {
     public By project_name = By.xpath("//input[@name='project-name'][@id='project-name']");
     public By next = By.xpath("//div[@class='footer-buttons']//div[@class='js-next-step btn btn-primary']");
     public By create1 = By.xpath("//div[@class='js-submit-form btn btn-primary'][text()='Create']");
-    public By new_project = By.xpath("//div[@class='title'][text()='New project 1']");
+    public By new_project1 = By.xpath("//div[@class='title'][text()='New project 1']");
+    public By new_project2 = By.xpath("//div[@class='title'][text()='New project 2']");
+    public By everyone = By.xpath("//span[@class='sub-title'][text()='All members of this workspace will be able to view this project and its actions']");
+    public By team_view = By.xpath("//span[@class='main-title'][text()='Team View']");
+    public By label_view = By.xpath("//span[@class='main-title'][text()='Label View']");
+    public By calendar_view = By.xpath("//span[@class='main-title'][text()='Calendar']");
+    public By Gantt_view = By.xpath("//span[@class='main-title'][text()='Gantt View']");
+    public By Unassigned_title = By.xpath("//h4[@class='kanban-list-title'][@title='Unassigned']");
+    public By Unstarted_title = By.xpath("//h4[@class='kanban-list-title'][@title='Unstarted']");
+    public By Unlabeled_title = By.xpath("//h4[@class='kanban-list-title'][@title='Unlabeled']");
+    public By new_project3 = By.xpath("//div[@class='title'][text()='New project 3']");
+    public By new_project4 = By.xpath("//div[@class='title'][text()='New project 4']");
+    public By drop_down = By.xpath("//div[@class='dropdown row-item view-by-dropdown']");
+    public By new_project5 = By.xpath("//div[@class='title'][text()='New project 5']");
+    public By details_icon = By.xpath("//span[@class='icon-title'][text()='Details']");
+
 
     public static void wait_page_loaded() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -63,8 +78,7 @@ public class Main_page {
 
     public void new_action(String name) {
 
-
-        new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(need_to_be_done));
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(need_to_be_done)));
         driver.findElement(need_to_be_done).click();
         driver.findElement(need_to_be_done).sendKeys(name + Keys.ENTER);
     }

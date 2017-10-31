@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Automation_Suite">
-              <span class="suite-name border-failed">Automation Suite</span>
+              <span class="suite-name border-passed">Automation Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods, 1 failed,   15 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Automation_Suite" class="hide-methods failed suite-Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-Automation_Suite -->
-                      <a href="#" panel-name="suite-Automation_Suite" class="show-methods failed suite-Automation_Suite"> (show)</a> <!-- show-methods failed suite-Automation_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Automation_Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Suite" title="tests.Google_signin" hash-for-method="google_signin">google_signin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Automation_Suite -->
+                    <span class="method-stats">22 methods,   22 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -156,6 +142,31 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Suite" title="tests.Project_Modal" hash-for-method="create_new_project_everyone_Gantt_view">create_new_project_everyone_Gantt_view</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Suite" title="tests.Project_Modal" hash-for-method="create_new_project_everyone_calendar_view">create_new_project_everyone_calendar_view</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Suite" title="tests.Project_Modal" hash-for-method="create_new_project_everyone_label_view">create_new_project_everyone_label_view</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Suite" title="tests.Project_Modal" hash-for-method="create_new_project_everyone_status_view">create_new_project_everyone_status_view</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Suite" title="tests.Project_Modal" hash-for-method="create_new_project_everyone_team_view">create_new_project_everyone_team_view</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Automation_Suite" title="tests.ActionTest" hash-for-method="create_new_subaction">create_new_subaction</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -167,6 +178,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Automation_Suite" title="tests.ActionTest" hash-for-method="go_to_subaction">go_to_subaction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Suite" title="tests.Project_Modal" hash-for-method="google_signin">google_signin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -186,6 +202,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Suite" title="tests.Project_Modal" hash-for-method="sign_up_test">sign_up_test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Automation_Suite" title="tests.ActionTest" hash-for-method="sign_up_test">sign_up_test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -201,29 +222,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Automation_Suite" class="panel Automation_Suite">
-          <div class="suite-Automation_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.Google_signin</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="google_signin">
-                  </a> <!-- google_signin -->
-                  <span class="method-name">google_signin</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at tests.Google_signin.google_signin(Google_signin.java:33)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Automation_Suite-class-failed -->
           <div class="suite-Automation_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -337,6 +335,63 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Automation_Suite-class-passed -->
+          <div class="suite-Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Project_Modal</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="create_new_project_everyone_Gantt_view">
+                  </a> <!-- create_new_project_everyone_Gantt_view -->
+                  <span class="method-name">create_new_project_everyone_Gantt_view</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="create_new_project_everyone_calendar_view">
+                  </a> <!-- create_new_project_everyone_calendar_view -->
+                  <span class="method-name">create_new_project_everyone_calendar_view</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="create_new_project_everyone_label_view">
+                  </a> <!-- create_new_project_everyone_label_view -->
+                  <span class="method-name">create_new_project_everyone_label_view</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="create_new_project_everyone_status_view">
+                  </a> <!-- create_new_project_everyone_status_view -->
+                  <span class="method-name">create_new_project_everyone_status_view</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="create_new_project_everyone_team_view">
+                  </a> <!-- create_new_project_everyone_team_view -->
+                  <span class="method-name">create_new_project_everyone_team_view</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="google_signin">
+                  </a> <!-- google_signin -->
+                  <span class="method-name">google_signin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sign_up_test">
+                  </a> <!-- sign_up_test -->
+                  <span class="method-name">sign_up_test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Suite-class-passed -->
         </div> <!-- panel Automation_Suite -->
         <div panel-name="test-xml-Automation_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -346,15 +401,15 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;Automation Suite&quot; parallel=&quot;tests&quot; allow-return-values=&quot;true&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Automation Suite&quot; parallel=&quot;tests&quot; allow-return-values=&quot;true&quot;&gt;
   &lt;test name=&quot;Login Test cases 01&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.Google_signin&quot;/&gt;
+      &lt;class name=&quot;tests.ActionTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Login Test cases 01 --&gt;
   &lt;test name=&quot;Login Test cases 02&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.ActionTest&quot;/&gt;
+      &lt;class name=&quot;tests.Project_Modal&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Login Test cases 02 --&gt;
 &lt;/suite&gt; &lt;!-- Automation Suite --&gt;
@@ -397,76 +452,100 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(16);
+data.addRows(22);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'sign_up_test')
 data.setCell(0, 2, 'tests.ActionTest')
-data.setCell(0, 3, 18227);
+data.setCell(0, 3, 27355);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Add_comment_to_action')
-data.setCell(1, 2, 'tests.ActionTest')
-data.setCell(1, 3, 17542);
+data.setCell(1, 1, 'google_signin')
+data.setCell(1, 2, 'tests.Project_Modal')
+data.setCell(1, 3, 24030);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'change_private_status')
-data.setCell(2, 2, 'tests.ActionTest')
-data.setCell(2, 3, 13366);
+data.setCell(2, 1, 'sign_up_test')
+data.setCell(2, 2, 'tests.Project_Modal')
+data.setCell(2, 3, 21301);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'google_signin')
-data.setCell(3, 2, 'tests.Google_signin')
-data.setCell(3, 3, 13236);
+data.setCell(3, 1, 'complite_subaction')
+data.setCell(3, 2, 'tests.ActionTest')
+data.setCell(3, 3, 13002);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'add_link_to_action_title_and_click')
+data.setCell(4, 1, 'go_to_subaction')
 data.setCell(4, 2, 'tests.ActionTest')
-data.setCell(4, 3, 12088);
+data.setCell(4, 3, 12109);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'complite_subaction')
+data.setCell(5, 1, 'add_link_to_action_title_and_click')
 data.setCell(5, 2, 'tests.ActionTest')
-data.setCell(5, 3, 11913);
+data.setCell(5, 3, 11806);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'create_subaction_url_in_title_and_click')
-data.setCell(6, 2, 'tests.ActionTest')
-data.setCell(6, 3, 10315);
+data.setCell(6, 1, 'create_new_project_everyone_status_view')
+data.setCell(6, 2, 'tests.Project_Modal')
+data.setCell(6, 3, 11530);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'change_action_title_click_close')
+data.setCell(7, 1, 'change_action_title_press_enter')
 data.setCell(7, 2, 'tests.ActionTest')
-data.setCell(7, 3, 10285);
+data.setCell(7, 3, 10975);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'create_new_subaction')
-data.setCell(8, 2, 'tests.ActionTest')
-data.setCell(8, 3, 10069);
+data.setCell(8, 1, 'create_new_project_everyone_Gantt_view')
+data.setCell(8, 2, 'tests.Project_Modal')
+data.setCell(8, 3, 10467);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'change_action_title_press_enter')
+data.setCell(9, 1, 'create_subaction_url_in_title_and_click')
 data.setCell(9, 2, 'tests.ActionTest')
-data.setCell(9, 3, 9725);
+data.setCell(9, 3, 10465);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'select_value_on_assignee_picker')
+data.setCell(10, 1, 'change_private_status')
 data.setCell(10, 2, 'tests.ActionTest')
-data.setCell(10, 3, 9511);
+data.setCell(10, 3, 10418);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'go_to_subaction')
-data.setCell(11, 2, 'tests.ActionTest')
-data.setCell(11, 3, 9392);
+data.setCell(11, 1, 'create_new_project_everyone_calendar_view')
+data.setCell(11, 2, 'tests.Project_Modal')
+data.setCell(11, 3, 10312);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'create_new_label')
+data.setCell(12, 1, 'create_new_subaction')
 data.setCell(12, 2, 'tests.ActionTest')
-data.setCell(12, 3, 9319);
+data.setCell(12, 3, 10159);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'make_action_urgent')
-data.setCell(13, 2, 'tests.ActionTest')
-data.setCell(13, 3, 9210);
+data.setCell(13, 1, 'create_new_project_everyone_label_view')
+data.setCell(13, 2, 'tests.Project_Modal')
+data.setCell(13, 3, 10131);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'private_action')
+data.setCell(14, 1, 'change_action_title_click_close')
 data.setCell(14, 2, 'tests.ActionTest')
-data.setCell(14, 3, 8041);
+data.setCell(14, 3, 10061);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'create_new_action_from_my_Actions')
-data.setCell(15, 2, 'tests.ActionTest')
-data.setCell(15, 3, 7791);
+data.setCell(15, 1, 'create_new_project_everyone_team_view')
+data.setCell(15, 2, 'tests.Project_Modal')
+data.setCell(15, 3, 9986);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'Add_comment_to_action')
+data.setCell(16, 2, 'tests.ActionTest')
+data.setCell(16, 3, 9900);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'create_new_label')
+data.setCell(17, 2, 'tests.ActionTest')
+data.setCell(17, 3, 9584);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'make_action_urgent')
+data.setCell(18, 2, 'tests.ActionTest')
+data.setCell(18, 3, 9574);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'select_value_on_assignee_picker')
+data.setCell(19, 2, 'tests.ActionTest')
+data.setCell(19, 3, 9393);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'private_action')
+data.setCell(20, 2, 'tests.ActionTest')
+data.setCell(20, 3, 9005);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'create_new_action_from_my_Actions')
+data.setCell(21, 2, 'tests.ActionTest')
+data.setCell(21, 3, 8339);
 window.suiteTableData['Automation_Suite']= { tableData: data, tableDiv: 'times-div-Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Automation_Suite">
               </div> <!-- times-div-Automation_Suite -->
             </div> <!-- times-div -->
@@ -492,10 +571,8 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.Google_signin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.Project_Modal</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">google_signin</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
@@ -506,61 +583,121 @@ return data;
                 <span class="method-name">sign_up_test</span>
                 <span class="method-start">1 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Project_Modal</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sign_up_test</span>
+                <span class="method-start">24033 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ActionTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">create_new_action_from_my_Actions</span>
-                <span class="method-start">18229 ms</span>
+                <span class="method-start">27356 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">make_action_urgent</span>
-                <span class="method-start">26021 ms</span>
+                <span class="method-start">35695 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">private_action</span>
-                <span class="method-start">35232 ms</span>
+                <span class="method-start">45269 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Project_Modal</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">create_new_project_everyone_status_view</span>
+                <span class="method-start">45335 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ActionTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">change_private_status</span>
-                <span class="method-start">43273 ms</span>
+                <span class="method-start">54275 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Project_Modal</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">create_new_project_everyone_team_view</span>
+                <span class="method-start">56866 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ActionTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">change_action_title_press_enter</span>
-                <span class="method-start">56640 ms</span>
+                <span class="method-start">64694 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Project_Modal</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">create_new_project_everyone_calendar_view</span>
+                <span class="method-start">66852 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ActionTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">change_action_title_click_close</span>
-                <span class="method-start">66366 ms</span>
+                <span class="method-start">75669 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Project_Modal</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">create_new_project_everyone_label_view</span>
+                <span class="method-start">77165 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ActionTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">create_new_label</span>
-                <span class="method-start">76652 ms</span>
+                <span class="method-start">85730 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Project_Modal</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">create_new_project_everyone_Gantt_view</span>
+                <span class="method-start">87297 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ActionTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">add_link_to_action_title_and_click</span>
-                <span class="method-start">85971 ms</span>
+                <span class="method-start">95314 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">create_new_subaction</span>
-                <span class="method-start">98059 ms</span>
+                <span class="method-start">107120 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">go_to_subaction</span>
-                <span class="method-start">108128 ms</span>
+                <span class="method-start">117280 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">create_subaction_url_in_title_and_click</span>
-                <span class="method-start">117521 ms</span>
+                <span class="method-start">129389 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">complite_subaction</span>
-                <span class="method-start">127836 ms</span>
+                <span class="method-start">139854 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">select_value_on_assignee_picker</span>
-                <span class="method-start">139750 ms</span>
+                <span class="method-start">152857 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Add_comment_to_action</span>
-                <span class="method-start">149261 ms</span>
+                <span class="method-start">162250 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
