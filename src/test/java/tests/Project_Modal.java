@@ -196,6 +196,7 @@ public class Project_Modal {
         driver.findElement(main_page_obj.create1).click();
 
         System.out.println("check if created project displayed and has team view");
+        Main_page.wait_page_loaded();
         driver.findElement(main_page_obj.new_project3).isDisplayed();
         driver.findElement(main_page_obj.drop_down).isDisplayed();
 
@@ -339,6 +340,7 @@ public class Project_Modal {
         System.out.println("login to Hive");
         sign_obj.login_to_Hive(Data.email2);
 
+        Main_page.wait_page_loaded();
         System.out.println("collapse");
         driver.findElement(main_page_obj.collapse).click();
 
@@ -348,7 +350,7 @@ public class Project_Modal {
         System.out.println("check if expand");
         driver.findElement(main_page_obj.everyone_title).isDisplayed();
 
-        driver.findElement(main_page_obj.collapse).click();
+
 
         driver.quit();
 
@@ -519,6 +521,7 @@ public class Project_Modal {
         executor.executeScript("arguments[0].click();", driver.findElement(main_page_obj.create_action));
 
         driver.findElement(main_page_obj.me).click();
+        Main_page.wait_page_loaded();
 
         main_page_obj.enter_text_by_char(driver.findElement(main_page_obj.action_title),"Action project");
 
@@ -534,9 +537,7 @@ public class Project_Modal {
         main_page_obj.javascript_click(driver.findElement(main_page_obj.project1));
 
         driver.findElement(main_page_obj.action_proj).isDisplayed();
-
-
-
+        driver.quit();
 
     }
 }

@@ -165,6 +165,7 @@ public class ActionTest {
         main_page_object.new_action("Test Action 2");
         main_page_object.create_new_label(label_name);
 
+        Main_page.wait_page_loaded();
         Assert.assertEquals(driver.findElement(main_page_object.label_created).getText(), label_name);
 
         driver.quit();
