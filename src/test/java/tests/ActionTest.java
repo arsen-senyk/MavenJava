@@ -325,10 +325,10 @@ public class ActionTest {
 
 
         System.out.println("click on complite icon");
-        JavascriptExecutor executor = (JavascriptExecutor)driver;
-        executor.executeScript("arguments[0].click();", driver.findElement(main_page_object.complite_box));
-        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//button[@class='btn btn-primary']"))));
-        driver.findElement(By.xpath("//button[@class='btn btn-primary']")).click();
+
+
+        Main_page.wait_page_loaded();
+        driver.findElement(main_page_object.complite_box).click();
 
         System.out.println("check status is completed");
         main_page_object.wait_page_loaded();
@@ -384,7 +384,7 @@ public class ActionTest {
 
         System.out.println("create new action");
         main_page_object.new_action("Action 8");
-        driver.findElement(main_page_object.action_created).click();
+        driver.findElement(main_page_object.action_created_8).click();
 
         System.out.println("add comment");
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_object.add_comment)));

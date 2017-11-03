@@ -34,9 +34,13 @@ public class Main_page {
     public By subaction_title = By.xpath("//div[@class='action-item-input force-wrap needsclick   '][text()='subaction 1']");
     public By new_subaction_link = By.xpath("//a[@class='autolink autolink-url']");
     public By subaction = By.xpath("//div[@class='action-item modal-subaction ui-droppable']");
-    public By complite_box = By.xpath("//div[@class='checkbox-custom']//i[@class='fa fa-check']");
+
+    public By complite_box = By.xpath("//div[@class='header']//div[@class='checkbox-custom']//i[@class='fa fa-check']");
     public By status = By.xpath("//div[@class='pipeline-dropdown dropdown text-center']//span[@class='truncate']");
-    public By action_created = By.xpath("//div[@class='action-item-flex-container']");
+
+    public By action_created = By.xpath("//div[@class='action-item-input force-wrap needsclick  move '][text()='Action 7']");
+    public By action_created_8 = By.xpath("//div[@class='action-item-input force-wrap needsclick  move '][text()='Action 8']");
+
     public By assignee_icon = By.xpath("//div[@class='img img-rounded-square initials-thumb hv-img-thumbnail person-thumb thumb-small']");
     public By unassigned = By.xpath("//div[@class='label-select choose-label choose-assignee']//span[text()='Unassigned']");
     public By assignee_icon2 = By.xpath("//div[@class='img img-rounded-square hv-img-thumbnail person-thumb thumb-small']");
@@ -70,12 +74,12 @@ public class Main_page {
     public By submit = By.xpath("//button[@class='btn btn-primary'][text()='Save']");
     public By technical = By.xpath("//div[@class='group-text']//span[text()='Technical']");
     public By expand = By.xpath("//i[@class='fa fa-angle-double-right expand-panel']");
-    public By everyone_title = By.xpath("//span[@class='group-name truncate'][text()='Everyone']");
+    public By everyone_title = By.xpath("//span[text()='Everyone']");
     public By collapse = By.xpath("//i[@class='fa fa-angle-double-left']");
     public By Landon_message = By.xpath("//div[@class='group-text make-strong unread']//span[text()='Landon (Demo)']");
     public By message_field = By.xpath("//div[@id='message-input-box-new'][@class='needsclick']");
     public By message_send = By.xpath("//p[@class='no-padding message-text def-body-text-msg-act'][text()='Hello, Landon!']");
-    public By RW_icon = By.xpath("//span[@class='initials'][text()='RW']");
+    public By R0_icon = By.xpath("//div[@class='img img-rounded-square initials-thumb']//span[@class='initials']");
     public By action_template = By.xpath("//a[@class='manage-workflows'][text()='Action templates']");
     public By new_action_template = By.xpath("//a[@class='new-action-template'][text()='+ Create New Action Template']");
     public By template_name = By.xpath("//input[@id='workflow-name'][@placeholder='Action template name']");
@@ -104,7 +108,7 @@ public class Main_page {
 
     public static void wait_page_loaded() {
         try {
-            Thread.sleep(1000);
+            Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

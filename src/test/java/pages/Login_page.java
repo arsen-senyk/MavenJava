@@ -44,7 +44,7 @@ public class Login_page {
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(data.url);
-        //driver.manage().window().maximize();
+        Main_page.wait_page_loaded();
         driver.findElement(join_hive).click();
         System.out.println(driver.getTitle());
         driver.findElement(continue_buton).click();

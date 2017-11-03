@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Project_Modal {
 
-    @Test
+    /*@Test
     public void google_signin() throws InterruptedException {
 
         ChromeDriverManager.getInstance().setup();
@@ -57,7 +57,7 @@ public class Project_Modal {
 
         driver.quit();
     }
-
+*/
 
     @Test(priority = 1)
     public void sign_up_test() throws InterruptedException {
@@ -393,7 +393,7 @@ public class Project_Modal {
         sign_obj.login_to_Hive(Data.email2);
 
         System.out.println("create action template");
-        driver.findElement(main_page_obj.RW_icon).click();
+        driver.findElement(main_page_obj.R0_icon).click();
 
         driver.findElement(main_page_obj.action_template).click();
 
@@ -448,6 +448,8 @@ public class Project_Modal {
 
         ArrayList<WebElement> SubDates = (ArrayList<WebElement>) driver.findElements(main_page_obj.sub_date);
 
+        Main_page.wait_page_loaded();
+
         Assert.assertEquals(driver.findElement(main_page_obj.action_date).getText(), SubDates.get(2).getText());
 
         LocalDate today = LocalDate.now();
@@ -475,6 +477,9 @@ public class Project_Modal {
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_obj.none)));
 
         ArrayList<WebElement> Drop1 = (ArrayList<WebElement>) driver.findElements(main_page_obj.none);
+
+        Main_page.wait_page_loaded();
+
         Drop1.get(1).click();
 
         new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_obj.choose_template)));
