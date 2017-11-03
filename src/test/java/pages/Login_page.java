@@ -33,7 +33,7 @@ public class Login_page {
 
     By login_field = By.id("email-input");
     By password_field = By.id("password-input");
-    By signin = By.xpath("//button[@class='btn-primary inactive']");
+
 
 
     public Login_page(WebDriver driver){
@@ -58,7 +58,7 @@ public class Login_page {
         for (int i = 0; i < B.length; i++) {
             driver.findElement(phone).sendKeys(B[i]);
         }
-        //driver.findElement(phone).sendKeys("0981234567");
+
         driver.findElement(email).click();
         Main_page.wait_page_loaded();
         String[] A = user_email.split("");

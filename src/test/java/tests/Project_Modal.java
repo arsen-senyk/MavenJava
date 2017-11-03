@@ -1,18 +1,17 @@
 package tests;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.Data;
 import pages.Login_page;
 import pages.Main_page;
-
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
@@ -59,6 +58,7 @@ public class Project_Modal {
         driver.quit();
     }
 
+
     @Test(priority = 1)
     public void sign_up_test() throws InterruptedException {
 
@@ -77,7 +77,7 @@ public class Project_Modal {
         ChromeDriverManager.getInstance().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        System.out.println("TEST: Create new project");
+        System.out.println("TEST: create_new_project_everyone_status_view");
         Login_page sign_obj = new Login_page(driver);
         Main_page main_page_obj = new Main_page(driver);
 
@@ -118,7 +118,7 @@ public class Project_Modal {
         ChromeDriverManager.getInstance().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        System.out.println("TEST: Create new project");
+        System.out.println("TEST: create_new_project_everyone_team_view");
         Login_page sign_obj = new Login_page(driver);
         Main_page main_page_obj = new Main_page(driver);
 
@@ -163,7 +163,7 @@ public class Project_Modal {
         ChromeDriverManager.getInstance().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        System.out.println("TEST: Create new project");
+        System.out.println("TEST: create_new_project_everyone_calendar_view");
         Login_page sign_obj = new Login_page(driver);
         Main_page main_page_obj = new Main_page(driver);
 
@@ -208,7 +208,7 @@ public class Project_Modal {
         ChromeDriverManager.getInstance().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        System.out.println("TEST: Create new project");
+        System.out.println("TEST: create_new_project_everyone_label_view");
         Login_page sign_obj = new Login_page(driver);
         Main_page main_page_obj = new Main_page(driver);
 
@@ -253,7 +253,7 @@ public class Project_Modal {
         ChromeDriverManager.getInstance().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        System.out.println("TEST: Create new project");
+        System.out.println("TEST: create_new_project_everyone_Gantt_view");
         Login_page sign_obj = new Login_page(driver);
         Main_page main_page_obj = new Main_page(driver);
 
@@ -292,4 +292,246 @@ public class Project_Modal {
         driver.quit();
     }
 
+    @Test(priority = 7)
+    public void create_group() {
+
+        ChromeDriverManager.getInstance().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        System.out.println("TEST: Create group");
+        Login_page sign_obj = new Login_page(driver);
+        Main_page main_page_obj = new Main_page(driver);
+
+        System.out.println("login to Hive");
+        sign_obj.login_to_Hive(Data.email2);
+
+        System.out.println("click on GROUPS+");
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_obj.group)));
+        driver.findElement(main_page_obj.group).click();
+
+        System.out.println("enter group name");
+        driver.findElement(main_page_obj.group_name).sendKeys("Technical");
+
+        System.out.println("check boxes for group memebers");
+        driver.findElement(main_page_obj.checkbox_barb).click();
+        driver.findElement(main_page_obj.checkbox_landon).click();
+
+        System.out.println("click submit button");
+        driver.findElement(main_page_obj.submit).click();
+
+        System.out.println("check if created group displayed");
+        driver.findElement(main_page_obj.technical).isDisplayed();
+
+        driver.quit();
+
+    }
+
+    @Test(priority = 8)
+    public void collapse_expand_group() {
+
+        ChromeDriverManager.getInstance().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        System.out.println("TEST: collapse_expand_group");
+        Login_page sign_obj = new Login_page(driver);
+        Main_page main_page_obj = new Main_page(driver);
+
+        System.out.println("login to Hive");
+        sign_obj.login_to_Hive(Data.email2);
+
+        System.out.println("collapse");
+        driver.findElement(main_page_obj.collapse).click();
+
+        System.out.println("expand group");
+        driver.findElement(main_page_obj.expand).click();
+
+        System.out.println("check if expand");
+        driver.findElement(main_page_obj.everyone_title).isDisplayed();
+
+        driver.findElement(main_page_obj.collapse).click();
+
+        driver.quit();
+
+    }
+
+    @Test(priority = 9)
+    public void send_message() {
+
+        ChromeDriverManager.getInstance().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        System.out.println("TEST: send_message");
+        Login_page sign_obj = new Login_page(driver);
+        Main_page main_page_obj = new Main_page(driver);
+
+        System.out.println("login to Hive");
+        sign_obj.login_to_Hive(Data.email2);
+
+        System.out.println("click on Landon message icon");
+        driver.findElement(main_page_obj.Landon_message).click();
+
+        System.out.println("enter message");
+        driver.findElement(main_page_obj.message_field).sendKeys("Hello, Landon!" + Keys.ENTER);
+
+        System.out.println("check if message displayed as send");
+        driver.findElement((main_page_obj.message_send)).isDisplayed();
+
+        driver.quit();
+    }
+
+    @Test(priority = 10)
+    public void action_template_create_plus_verify_deadlines() {
+
+        ChromeDriverManager.getInstance().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        System.out.println("TEST: aaction_template_create_plus_verify_deadlines");
+        Login_page sign_obj = new Login_page(driver);
+        Main_page main_page_obj = new Main_page(driver);
+
+        System.out.println("login to Hive");
+        sign_obj.login_to_Hive(Data.email2);
+
+        System.out.println("create action template");
+        driver.findElement(main_page_obj.RW_icon).click();
+
+        driver.findElement(main_page_obj.action_template).click();
+
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_obj.new_action_template)));
+        driver.findElement(main_page_obj.new_action_template).click();
+
+        driver.findElement(main_page_obj.template_name).sendKeys("Action template 1");
+
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_obj.assignee_button)));
+        driver.findElement(main_page_obj.assignee_button).click();
+
+        driver.findElement(main_page_obj.multi_select).click();
+
+        driver.findElement(main_page_obj.select_all).click();
+
+        driver.findElement(main_page_obj.add_step).click();
+        driver.findElement(main_page_obj.add_step).sendKeys("subaction 1" + Keys.ENTER);
+
+        driver.findElement(main_page_obj.add_step).sendKeys("subaction 2");
+
+        driver.findElement(main_page_obj.plus).click();
+
+        driver.findElement(main_page_obj.add_step).sendKeys("subaction 3" + Keys.ENTER);
+
+        ArrayList<WebElement> subs = (ArrayList<WebElement>) driver.findElements(main_page_obj.day_setup);
+        subs.get(1).clear();
+        subs.get(1).sendKeys("2");
+        subs.get(2).clear();
+        subs.get(2).sendKeys("3");
+
+        driver.findElement(main_page_obj.save_action_templ).click();
+
+        driver.findElement(main_page_obj.done).click();
+
+        System.out.println("create new action with template");
+
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].click();", driver.findElement(main_page_obj.create_action));
+
+        driver.findElement(main_page_obj.me).click();
+
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_obj.none)));
+        ArrayList<WebElement> Drop = (ArrayList<WebElement>) driver.findElements(main_page_obj.none);
+        Drop.get(1).click();
+
+        driver.findElement(main_page_obj.choose_template).click();
+
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_obj.confirm)));
+        driver.findElement(main_page_obj.confirm).click();
+
+        System.out.println("check if correct dates displayed");
+
+        ArrayList<WebElement> SubDates = (ArrayList<WebElement>) driver.findElements(main_page_obj.sub_date);
+
+        Assert.assertEquals(driver.findElement(main_page_obj.action_date).getText(), SubDates.get(2).getText());
+
+        LocalDate today = LocalDate.now();
+        LocalDate tomorrow = today.plusDays(1);
+        LocalDate aftertomorrow = today.plusDays(2);
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM d");
+
+        Assert.assertEquals(aftertomorrow.format(formatter), SubDates.get(1).getText());
+        Assert.assertEquals(tomorrow.format(formatter), SubDates.get(0).getText());
+
+
+        System.out.println("create new action with deadline first and then with template");
+        executor.executeScript("arguments[0].click();", driver.findElement(main_page_obj.create_action));
+
+        driver.findElement(main_page_obj.me).click();
+
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_obj.choose_deadline)));
+        driver.findElement(main_page_obj.choose_deadline).click();
+
+        driver.findElement(main_page_obj.date_28).click();
+
+        driver.findElement(main_page_obj.action_title).click();
+
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_obj.none)));
+
+        ArrayList<WebElement> Drop1 = (ArrayList<WebElement>) driver.findElements(main_page_obj.none);
+        Drop1.get(1).click();
+
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_obj.choose_template)));
+        driver.findElement(main_page_obj.choose_template).click();
+
+        new WebDriverWait(driver, 5).until(ExpectedConditions.visibilityOf(driver.findElement(main_page_obj.confirm)));
+        driver.findElement(main_page_obj.confirm).click();
+
+        ArrayList<WebElement> SubDates1 = (ArrayList<WebElement>) driver.findElements(main_page_obj.sub_date);
+
+        System.out.println("check if correct dates displayed");
+
+        Assert.assertEquals(driver.findElement(main_page_obj.action_date).getText(), SubDates1.get(2).getText());
+
+        Assert.assertTrue(SubDates1.get(1).getText().contains("27"));
+        Assert.assertTrue(SubDates1.get(0).getText().contains("26"));
+
+        driver.quit();
+
+    }
+
+    @Test(priority = 11)
+    public void action_with_project() {
+
+        ChromeDriverManager.getInstance().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        System.out.println("TEST: action_with_project");
+        Login_page sign_obj = new Login_page(driver);
+        Main_page main_page_obj = new Main_page(driver);
+
+        System.out.println("login to Hive");
+        sign_obj.login_to_Hive(Data.email2);
+
+        driver.manage().window().maximize();
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].click();", driver.findElement(main_page_obj.create_action));
+
+        driver.findElement(main_page_obj.me).click();
+
+        main_page_obj.enter_text_by_char(driver.findElement(main_page_obj.action_title),"Action project");
+
+        ArrayList<WebElement> proj = (ArrayList<WebElement>) driver.findElements(main_page_obj.select_project);
+
+        proj.get(0).click();
+
+        driver.findElement(main_page_obj.project_name1).click();
+
+        driver.findElement(main_page_obj.action_title).sendKeys(Keys.ENTER);
+
+        //new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(driver.findElement(main_page_obj.project1)));
+        main_page_obj.javascript_click(driver.findElement(main_page_obj.project1));
+
+        driver.findElement(main_page_obj.action_proj).isDisplayed();
+
+
+
+
+    }
 }
